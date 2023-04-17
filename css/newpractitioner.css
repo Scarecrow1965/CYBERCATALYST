@@ -16,7 +16,7 @@
 /* RESPONSIVE IMAGE SLIDEER */
 /*  */
 .career-title2 {
-    border: 2px dashed yellow;
+    /* border: 2px dashed yellow; */
     padding: 15px;
     width: 100%;
     /* height: 100px; */
@@ -73,7 +73,7 @@
 }
 
 .slide:first-child {
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
     display: block;
 }
 
