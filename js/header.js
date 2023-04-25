@@ -5,7 +5,7 @@ template.innerHTML = `
             <div class="row">
                 <div class="col-lg-2">
                     <div class="header__logo">
-                        <a class="img-responsive" href="index.html"><img src="../img/logo.png" alt=""></a>
+                        <a class="img-responsive" href="index.html"><img src="img/logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-10">
