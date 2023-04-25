@@ -1,0 +1,68 @@
+/*  */
+/* Matrix Rain */
+/*  */
+
+/* body { 
+    background: black; 
+} */
+
+/* main {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 1000px;
+} */
+
+/* p {
+    line-height: 1;
+} */
+
+/* span {
+    display: block;
+    width: 2vmax; 
+    height: auto;
+    font-size: 15px; 
+    color: #9bff9b11;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+} */
+
+/* ================================================================= */
+/* VERSION #2 from https://www.youtube.com/watch?v=f5ZswIE_SgY&t=79s */
+/* ================================================================= */
+
+body {
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+canvas {
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* for 4k monitors */
+    /* max-height: 1000px; */
+    /* top: 100px; */
+    /* left: 200px; */
+    /* right: 200px; */
+    /* bottom: 466px; */
+    /*  */
+    /* 1920 x 1080p monitors*/
+    /* max-height: 750px; */
+    /* top: 100px; */
+    /* left: 40px; */
+    /*  */
+    /* 1280 x 1024 monitors */
+    /* max-height: 680px; */
+    /* top: 100px; */
+    /*  */
+    /* 800 x 600 monitors */
+    /* max-height: 700px; */
+    /* top: 100px; */
+    /*  */
+    /* used to limit window size */
+    /* border: 2px dashed red; */
+    /* without the border then the matrix extends through the footer */
+}

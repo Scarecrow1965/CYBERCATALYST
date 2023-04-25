@@ -335,7 +335,8 @@ ul, ol {
   padding-left: 130px;
   padding-right: 130px;
   text-align: center;
-  /* color: white; */
+  color: white;
+  z-index: 1;
 }
 .careers {
   /* used for testing purposes only */
@@ -350,9 +351,10 @@ ul, ol {
 .card {
   /* top left bottom right */
   margin: 0px 10px 0px 10px;
-  background: inherit;
+  /* background: inherit; */
 }
 .cardimg {
+  z-index: 1;
   display: grid;
   justify-content: center;
 }
@@ -389,18 +391,22 @@ ul, ol {
 /* software */
 .pos-ta {
   background-color: blue;
+  z-index: 1;
 }
 /* network */
 .pos-tb {
   background-color: #ff7417;
+  z-index: 1;
 }
 /* defence */
 .pos-tc {
   background-color: green;
+  z-index: 1;
 }
 /* forensics */
 .pos-td {
   background-color: red;
+  z-index: 1;
 }
 /*  */
 .btn2 {
@@ -422,6 +428,7 @@ ul, ol {
 /* REACTIVE BUTTONS */
 .blue {
   background-color: blue;
+  z-index: 1;
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 5px 5px 5px 0px #3C93D5;
 }
@@ -429,6 +436,7 @@ ul, ol {
 
 .green {
   background-color: green;
+  z-index: 1;
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 5px 5px 5px 0px #15B358;
 }
@@ -436,6 +444,7 @@ ul, ol {
 
 .red {
   background-color: red;
+  z-index: 1;
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 5px 5px 5px 0px #CE3323;
 }
@@ -443,6 +452,7 @@ ul, ol {
 
 .orange {
   background-color: #ff7417;
+  z-index: 1;
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 5px 5px 5px 0px #CC7722;
 }
@@ -508,6 +518,7 @@ ul, ol {
     border-left-color: transparent;
   }
 }
+/* W3C CSS VALIDATOR FLAGS THIS AS AN ERROR*/
 @-webkit-keyframes loader {
   0% {
     -webkit-transform: rotate(0deg);
@@ -528,6 +539,10 @@ ul, ol {
 /*---------------------
   Part 3 - Header or Main Menu
 -----------------------*/
+header {
+  z-index: 1
+}
+
 .header {
   position: absolute;
   left: 0;
@@ -800,41 +815,35 @@ ul, ol {
   transition: all, 0.5s;
 }
 /*  */
+/* used in candidates and employers htmls */
 .hero__text h4 {
-  color: white;
+  background-color: white;
+  border-radius: 30px;
+  color: black;
   display: block;
-  /* keeping headings size constant */
-  /* font-size: 25px; */
   letter-spacing: 2px;
   margin-bottom: 18px;
   position: relative;
   top: 100px;
+  padding: 24px;
+  /* top left bottom right */
   opacity: 0;
   -webkit-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-.hero__text h4 ul {
-  /* keeping headings size constant */
-  /* font-size: 24px; */
-  background-color: white;
-  color: black;
-  padding: 24px;
-  /* top left bottom right */
-}
-.hero__text h4 ul b {
-  /* keeping headings size constant */
-  /* font-size: 28px; */
+.hero__text h4 b {
   -webkit-transform: uppercase;
   -o-transition: uppercase;
+  /* for SAMSUNG PHONES ONLY */
   transition: uppercase;
+  /*  */
   text-transform: uppercase;
 }
+/* used in index html only */
 .hero__text span {
   color: white;
   display: block;
-  /* keeping headings size constant */
-  /* font-size: 24px; */
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 18px;
@@ -1126,7 +1135,7 @@ ul, ol {
   top: 0;
   height: 100%;
   width: 100%;
-  background: url(../img/team/team-hover.png);
+  background: url(../img/team/team-hover.avif);
   content: "";
   z-index: -1;
 }
@@ -1140,7 +1149,7 @@ ul, ol {
 }
 .team__item__text p {
   color:white;
-  font-weight: 300px;
+  font-weight: 300;
   margin-bottom: 12px;
 }
 .team__item__text .team__item__social a {
@@ -1281,6 +1290,9 @@ ul, ol {
 /*---------------------
   Part 10 - Footer section
 -----------------------*/
+footer {
+  z-index: 1;
+}
 .footer {
   /* used for testing purposes only */
   /* border: 2px dashed green; */
@@ -1431,7 +1443,7 @@ ul, ol {
   display: grid;
   width: 320px;
   height: 100px;
-  top: 40px;
+  top: 140px;
   left: 100px;
   z-index: 9;
 }
@@ -2251,11 +2263,11 @@ ul, ol {
   color: #adadad;
 } */
 
-.input__list {
+/* .input__list {
   margin-right: -20px;
   overflow: hidden;
-}
-.input__list input {
+} */
+/* .input__list input {
   height: 50px;
   width: calc(33.33% - 20px);
   float: left;
@@ -2267,24 +2279,25 @@ ul, ol {
   font-weight: 300;
   margin-right: 20px;
   margin-bottom: 20px;
-}
-.input__list input:placeholder {
+} */
+/* does not work */
+/* .input__list input:placeholder {
   color: #adadad;
-}
+} */
 
 /*---------------------
   Contact Widget
 -----------------------*/
-.contact-widget {
+/* .contact-widget {
   background: black;
   padding-bottom: 70px;
-}
+} */
 
-.contact__widget__item {
+/* .contact__widget__item {
   margin-bottom: 30px;
-}
+} */
 
-.contact__widget__item__icon {
+/* .contact__widget__item__icon {
   height: 70px;
   width: 70px;
   border: 1px solid rgba(225, 225, 225, 0.5);
@@ -2293,49 +2306,49 @@ ul, ol {
   border-radius: 50%;
   float: left;
   margin-right: 30px;
-}
-.contact__widget__item__icon i {
+} */
+/* .contact__widget__item__icon i {
   font-size: 30px;
   color: white;
-}
+} */
 
-.contact__widget__item__text {
+/* .contact__widget__item__text {
   overflow: hidden;
   padding-top: 7px;
-}
-.contact__widget__item__text h4 {
+} */
+/* .contact__widget__item__text h4 {
   font-size: 22px;
   color: white;
   font-weight: 700;
   margin-bottom: 10px;
-}
-.contact__widget__item__text p {
+} */
+/* .contact__widget__item__text p {
   margin-bottom: 0;
-}
+} */
 
 /*---------------------
   Contact
 -----------------------*/
-.contact {
+/* .contact {
   background: #100028;
   padding-top: 0;
   overflow: hidden;
-}
+} */
 
-.contact__map {
+/* .contact__map {
   height: 450px;
-}
-.contact__map iframe {
+} */
+/* .contact__map iframe {
   width: 100%;
-}
+} */
 
-.contact__form h3 {
+/* .contact__form h3 {
   color: white;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 35px;
-}
-.contact__form form input {
+} */
+/* .contact__form form input {
   height: 50px;
   width: 100%;
   border: 1px solid rgba(225, 225, 225, 0.5);
@@ -2349,14 +2362,15 @@ ul, ol {
   -webkit-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
-}
-.contact__form form input:placeholder {
+} */
+/* does not work */
+/* .contact__form form input:placeholder {
   color: #adadad;
-}
-.contact__form form input:focus {
+} */
+/* .contact__form form input:focus {
   border-color: #e1e1e1;
-}
-.contact__form form textarea {
+} */
+/* .contact__form form textarea {
   height: 110px;
   width: 100%;
   border: 1px solid rgba(225, 225, 225, 0.5);
@@ -2371,13 +2385,15 @@ ul, ol {
   -webkit-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
-}
-.contact__form form textarea:placeholder {
+} */
+/* does not work */
+/* .contact__form form textarea:placeholder {
   color: #adadad;
-}
-.contact__form form textarea:focus {
+} */
+/* .contact__form form textarea:focus {
   border-color: #e1e1e1;
-}
+} */
+
 /* -------------------------------------------------------------------------------------- */
 /*--------------------------------- Responsive Media Queries -----------------------------*/
 /* -------------------------------------------------------------------------------------- */
@@ -2386,7 +2402,10 @@ ul, ol {
     max-width: 1170px;
   }
 }
+
+/* ------------------------------------- */
 /* Medium Device = 1200px */
+/* ------------------------------------- */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header__nav__menu {
     margin-right: 25px;
@@ -2395,7 +2414,6 @@ ul, ol {
   .header__nav__menu ul li {
     margin-right: 25px;
   }
-
   .header__nav__social {
     padding-left: 25px;
   }
@@ -2412,7 +2430,6 @@ ul, ol {
   .counter__item.second__item {
     margin-top: -210px;
   }
-
   .counter__item.fourth__item {
     margin-top: -210px;
   }
@@ -2421,7 +2438,9 @@ ul, ol {
     max-width: 930px !important;
   }
 }
+/* ------------------------------------- */
 /* Tablet Device = 768px */
+/* ------------------------------------- */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero__slider.owl-carousel .owl-dots {
     max-width: 690px !important;
@@ -2431,6 +2450,12 @@ ul, ol {
     margin-bottom: 50px;
   }
 
+  .counter {
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+
   .counter__item {
     -webkit-transform: rotate(0);
     -ms-transform: rotate(0);
@@ -2438,11 +2463,14 @@ ul, ol {
     margin-bottom: 30px;
     width: auto;
   }
-
+  .counter__item__text {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+        transform: rotate(0);
+  }
   .counter__item::before {
     display: none;
   }
-
   .counter__content {
     padding: 0;
   }
@@ -2450,31 +2478,16 @@ ul, ol {
   .counter__item.second__item {
     margin-top: 0;
   }
-
   .counter__item.fourth__item {
     margin-top: 0;
-  }
-
-  .counter__item__text {
-    -webkit-transform: rotate(0);
-    -ms-transform: rotate(0);
-        transform: rotate(0);
-  }
-
-  .counter {
-    height: auto;
-    padding-top: 100px;
-    padding-bottom: 70px;
   }
 
   .team__item.team__item--second {
     margin-top: 0;
   }
-
   .team__item.team__item--third {
     margin-top: 0;
   }
-
   .team__item.team__item--fourth {
     margin-top: 0;
   }
@@ -2487,7 +2500,6 @@ ul, ol {
   .about__pic {
     margin-bottom: 50px;
   }
-
   .about__text {
     padding-left: 0;
   }
@@ -2497,44 +2509,37 @@ ul, ol {
     /* top left bottom right */
   }
 
+  .slicknav_nav {
+    background: black;
+	width:200px;
+  }
   .slicknav_menu {
     background: transparent;
     padding: 0;
     display: block;
   }
-
   .slicknav_nav ul {
     margin: 0;
     padding: 10px 30px;
     /* top left bottom right */
   }
-
   .slicknav_nav .slicknav_row, .slicknav_nav a {
     padding: 7px 0;
     /* top left bottom right */
     margin: 0;
     color: white;
     font-weight: 600;
-
   }
-
   .slicknav_nav .slicknav_row:hover {
     border-radius: 0;
     background: transparent;
     color: black;
   }
-
   .slicknav_nav a:hover {
     border-radius: 0;
     background: transparent;
     color: black;
   }
-
-  .slicknav_nav {
-    background: black;
-	width:200px;
-  }
-
   .slicknav_btn {
     position: absolute;
     right: 10px;
@@ -2545,45 +2550,16 @@ ul, ol {
   .header .container {
     position: relative;
   }
-
   .header__nav__option {
     display: none;
   }
 }
+/* ------------------------------------- */
 /* Wide Mobile = 480px */
+/* ------------------------------------- */
 @media only screen and (max-width: 767px) {
   .services__title {
     margin-bottom: 50px;
-  }
-
-  .counter__item {
-    -webkit-transform: rotate(0);
-    -ms-transform: rotate(0);
-        transform: rotate(0);
-    margin-bottom: 30px;
-    width: auto;
-  }
-
-  .counter__item::before {
-    display: none;
-  }
-
-  .counter__content {
-    padding: 0;
-  }
-
-  .counter__item.second__item {
-    margin-top: 0;
-  }
-
-  .counter__item.fourth__item {
-    margin-top: 0;
-  }
-
-  .counter__item__text {
-    -webkit-transform: rotate(0);
-    -ms-transform: rotate(0);
-        transform: rotate(0);
   }
 
   .counter {
@@ -2591,15 +2567,37 @@ ul, ol {
     padding-top: 100px;
     padding-bottom: 70px;
   }
+  .counter__item {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+        transform: rotate(0);
+    margin-bottom: 30px;
+    width: auto;
+  }
+  .counter__item::before {
+    display: none;
+  }
+  .counter__content {
+    padding: 0;
+  }
+  .counter__item__text {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+        transform: rotate(0);
+  }
+  .counter__item.second__item {
+    margin-top: 0;
+  }
+  .counter__item.fourth__item {
+    margin-top: 0;
+  }
 
   .team__item.team__item--second {
     margin-top: 0;
   }
-
   .team__item.team__item--third {
     margin-top: 0;
   }
-
   .team__item.team__item--fourth {
     margin-top: 0;
   }
@@ -2612,29 +2610,29 @@ ul, ol {
   .about__pic {
     margin-bottom: 50px;
   }
-
   .about__text {
     padding-left: 0;
   }
 
   .hero__slider.owl-carousel .owl-dots {
-    max-width: auto;
+    max-width: inherit;
     padding: 0 15px;
     /* top left bottom right */
   }
 
+  .slicknav_nav {
+    background: black;
+  }
   .slicknav_menu {
     background: transparent;
     padding: 0;
     display: block;
   }
-
   .slicknav_nav ul {
     margin: 0;
     padding: 10px 30px;
     /* top left bottom right */
   }
-
   .slicknav_nav .slicknav_row,
 .slicknav_nav a {
     padding: 7px 0;
@@ -2643,23 +2641,16 @@ ul, ol {
     color: white;
     font-weight: 600;
   }
-
   .slicknav_nav .slicknav_row:hover {
     border-radius: 0;
     background: transparent;
     color: black;
   }
-
   .slicknav_nav a:hover {
     border-radius: 0;
     background: transparent;
     color: black;
   }
-
-  .slicknav_nav {
-    background: black;
-  }
-
   .slicknav_btn {
     position: absolute;
     right: 10px;
@@ -2670,7 +2661,6 @@ ul, ol {
   .header .container {
     position: relative;
   }
-
   .header__nav__option {
     display: none;
   }
@@ -2683,15 +2673,12 @@ ul, ol {
   .grid-sizer {
     width: calc(50% - 10px);
   }
-
-  .work__item.wide__item {
-    width: calc(50% - 10px);
-  }
-
   .work__item {
     width: calc(50% - 10px);
   }
-
+  .work__item.wide__item {
+    width: calc(50% - 10px);
+  }
   .work__item.large__item {
     width: calc(50% - 10px);
   }
@@ -2708,20 +2695,18 @@ ul, ol {
   .input__list {
     margin-right: 0;
   }
-
   .input__list input {
     width: 100%;
     margin-right: 0;
   }
 
-  .contact__map {
+  /* .contact__map {
     margin-bottom: 40px;
-  }
+  } */
 
   .team__item {
     margin-bottom: 20px;
   }
-
   .team .p-0 {
     padding: 0 15px !important;
     /* top left bottom right */
@@ -2731,12 +2716,14 @@ ul, ol {
     margin-right: 0;
   }
 
-  .blog__details__quote {
-    padding: 30px 45px 35px 35px;
+  /* .blog__details__quote {
+    padding: 30px 45px 35px 35px; */
     /* top left bottom right */
-  }
+  /* } */
 }
+/* ------------------------------------- */
 /* Small Device = 320px */
+/* ------------------------------------- */
 @media only screen and (max-width: 479px) {
   .hero__text h2 {
     font-size: 30px;
@@ -2747,19 +2734,16 @@ ul, ol {
     width: 100%;
   }
 
-  .work__item.wide__item {
-    width: 100%;
-  }
-
   .work__item {
     width: 100%;
     margin-right: 0;
   }
-
+  .work__item.wide__item {
+    width: 100%;
+  }
   .work__item.large__item {
     width: 100%;
   }
-
   .work__gallery {
     margin-right: 0;
   }
@@ -2767,7 +2751,6 @@ ul, ol {
   .pagination__option .arrow__pagination.left__arrow {
     margin-right: 15px;
   }
-
   .pagination__option .arrow__pagination.right__arrow {
     margin-left: 10px;
   }
@@ -2777,7 +2760,3 @@ ul, ol {
     /* top left bottom right */
   }
 }
-
-/*  */
-/* MATRIX RAIN CSS */
-/*  */

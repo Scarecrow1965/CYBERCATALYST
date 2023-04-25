@@ -6,7 +6,6 @@
 	box-sizing: border-box;
 	text-align: left;
 	margin: 0;
-    /* font-family: Arial; */
     color: inherit;
 }
 
@@ -16,55 +15,70 @@
 	border: none;
 	padding: 15px;
 	background-color:white;
+    position: relative;
 }
+
 .bgn-wf-wrapper form {
     margin: 0;
+    padding: 0;
+    line-height: normal;
 }
 .bgn-wf-row {
 	/* used for testing purposes only */	
 	/* border: 2px dashed green; */
 	/*  */
-	padding: 5px 0 5px 0;
+	padding: 10px 0 10px 0;
     /* top right bottom left */
 	display: flex;
-    color: black;
+    /* color: black; */
 }
 .bgn-wf-label{
 	/* used for testing purposes only */
 	/* border: 2px dashed orange; */
 	/*  */
     width: 25%;
-	padding: 0px 10px 0px 10px;
+	padding: 0 5px 0 10px;
     /* top right bottom left */
-	align-self: center;
-	word-break: break-word;
 	position: relative;
+    max-width: 175px;
 }
 .bgn-wf-field {
-    /* padding: 10px 0px 5px 0px;*/
-    /* top right bottom left */
 	text-align: left;
-	word-break: break-word;
-	width: 50%;
-	flex: 1;
+	width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    position: relative;
 }
+
 .bgn-wf-field.full {
 	/* used for testing purposes only */
-	/* border: 2px dashed violet; */
+	/* border: 2px dashed #00f16d; */
 	/*  */
-	max-width: 480px;
+	max-width: 500px;
 }
 .bgn-wf-field.half {
 	/* used for testing purposes only */
 	/* border: 2px dashed violet; */
 	/*  */
-	max-width: 240px;
+	max-width: 260px;
+}
+.check {
+    /* used for testing purposes only */
+    /* border:2px dashed black; */
+    /*  */
+    padding-left: 15px;
 }
 
 .bgn-wf-field input {
-    /* max-width: 480px; */
-    border-radius:3px;
-    width: 70%;
+    width: 80%;
+    appearance: none;
+    position: relative;
+    display: block;
+	color: #2d3748;
+	border-radius: 2px;
+    border: 1px solid #cbd5e0;
+	box-shadow: inset 0 2px 4px 0 grey;
 }
 
 .bgn-star {
@@ -76,20 +90,22 @@
 
 form .button {
     width: 100%;
-    padding: 10px 0 10px 0px;
+    padding: 10px 0 10px 0;
     /* top right bottom left */
     background-color: #28A55F;
     border: none;
     cursor: pointer;
     text-transform: uppercase;
     text-align: center;
-}
-form .button.resetbtn {
     margin-left:  30px;
 }
 form .button:hover {
     background-color: #4FDA8C;
 }
+form .button:disabled {
+    cursor: not-allowed;
+}
+
 
 @media screen and (max-width: 590px) {
 	.bgn-wf-wrapper {
@@ -104,6 +120,7 @@ form .button:hover {
 	.bgn-wf-field div > select{ width: auto !important;	}
 	.bgn-wf-label:empty{ display: none; }
 }
+
 
 /* ------------------------------------------------------------ */
 /*            MULTIPLE SIGN UP / REGISTRATION MODULE           */
@@ -225,18 +242,40 @@ form .button:hover {
 /* Validation fields */
 /* ================================== */
 
-/* label {
-    display: none;
-} */
-
-
-/* ======================== */
-/* HIDING ERROR MESSAGESE */
-/* ======================== */
-
-/* .error{
-    display: none;
+.icon {
+    margin: 0;
+    padding: 0;
+	 width: 24px;
+	 height: 24px;
+     display: inline-block;
+     position: relative;
+	 pointer-events: none;
+	 z-index: 2;
 }
-.error.visible {
-    display: block;
-} */
+.icon.icon-success {	
+    fill: green;
+}
+.icon.icon-error {
+	 fill: red;
+}
+.hidden {
+	 display: none;
+}
+.error-message {
+	 font-size: 0.85rem;
+	 color: red;
+}
+
+.input::placeholder {
+	 color: #a0aec0;
+}
+.input.input-error {
+	 border: 1px solid red;
+}
+.input.input-error:focus {
+	 border: 1px solid red;
+}
+.input:focus {
+	 outline: none;
+	 border: 1px solid blue;
+}
