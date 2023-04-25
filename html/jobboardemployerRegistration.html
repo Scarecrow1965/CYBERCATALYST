@@ -6,7 +6,7 @@
 	    <meta name="keywords" content="Videograph, unica, creative, html">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<link rel="icon" href="../img/favicon.ico">
+		<link rel="icon" href="img/favicon.ico">
 
     	<title>Cyber Catalyst</title>
 
@@ -15,16 +15,16 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap">
 
     	<!-- Css Styles -->
-    	<link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
-    	<link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
-    	<link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
-    	<link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+    	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    	<link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    	<link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
 		<!-- magnific popup used for video. (even though it still works on firefox without it)-->
-    	<!-- <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css"> -->
+    	<!-- <link rel="stylesheet" href="css/magnific-popup.css" type="text/css"> -->
 			<!-- slicknav used for mobile menu -->
-    	<link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
-		<link rel="stylesheet" href="../css/style.css" type="text/css">
-		<link rel="stylesheet" href="../css/jobboard.css" type="text/css">
+    	<link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="css/jobboard.css" type="text/css">
 	
 		<!-- Acuspire Search Engine -->
 		<link href="https://static.acuspire.ai/css/app.css" rel="preload" as="style">
@@ -33,22 +33,22 @@
 		<link href="https://static.acuspire.ai/css/app.css" rel="stylesheet">
 
 		<!-- Js Plugins -->
-		<script src="../js/jquery-3.3.1.min.js"></script>
-		<script src="../js/bootstrap.min.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 			<!-- only used for top of the page icon and video -->
-		<!-- <script src="../js/jquery.magnific-popup.min.js"></script> -->
-		<!-- <script src="../js/mixitup.min.js"></script> -->
-		<script src="../js/masonry.pkgd.min.js"></script>
-		<script src="../js/owl.carousel.min.js"></script>
+		<!-- <script src="js/jquery.magnific-popup.min.js"></script> -->
+		<!-- <script src="js/mixitup.min.js"></script> -->
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
 			<!-- slicknav used for mobile menu -->
-		<script src="../js/jquery.slicknav.js"></script>
-		
+		<script src="js/jquery.slicknav.js"></script>
 			<!-- Must use -->
-		<script src="../js/main.js" defer></script>
-		<script src="../js/header.js" defer></script>
-		<script src="../js/footer.js" defer></script>
-		<script src="../js/topbutton.js" defer></script>
-		<script src="../js/jobboardEmployer.js" defer></script>
+		<script src="js/main.js" defer></script>
+		<script src="js/header.js" defer></script>
+		<script src="js/footer.js" defer></script>
+		<script src="js/topbutton.js" defer></script>
+
+		<script src="js/jobboardEmployer.js" defer></script>
 
 	</head>
 
@@ -56,7 +56,9 @@
 
 		<!-- On Top Button -->
 		<!-- installs a white up arrow inside an orange circle  -->
-		<button onclick="topFunction()" id="myBtn" title="Go to top"><img width="50" height="50" src="../img/gototop.png" alt="Go to Top icon"></button>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">
+			<img width="50" height="50" src="img/gototop.png" alt="Go to Top icon">
+		</button>
 
 		<!-- Page Preloder -->
 		<div id="preloder">
@@ -203,10 +205,10 @@
 
 		<!-- version 2 -->
 		<section class="hero">
-		<div class="hero__item09 set-bg" data-setbg="../img/pictures/Best-place-online-job-search.jpg">
+		<div class="hero__item09 set-bg" data-setbg="img/pictures/Best-place-online-job-search.jpg">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-8">
+					<div class="col-lg-12">
 						<div class="bgn-wf-wrapper">
 							<form class="employer-form" id="BiginWebToContactForm5564459000000447001" name="BiginWebToContactForm5564459000000447001" method="POST" enctype="multipart/form-data" onsubmit='javascript:document.charset="UTF-8"; return validateForm5564459000000447001()' accept-charset="UTF-8" action="https://bigin.zoho.com/crm/WebToContactForm">
 								<!-- Do not remove this code. -->
@@ -227,15 +229,36 @@
 											<span class="bgn-star">&#42;</span>
 										</div>
 										<div class="bgn-wf-field half">
-											<input type="text" id="employer_accountname" name="Account Name" class="input" maxlength="120" autocomplete="off" placeholder="Company Name" required aria-required="true"><br>
+											<input type="text" id="employer_accountname" name="Account Name" class="input" maxlength="120" autocomplete="off" placeholder="Please enter your Company Name" required aria-required="true">
+											<svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+													clip-rule="evenodd">
+											</svg>
+											<svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+													clip-rule="evenodd">
+											</svg>
+											<span class="error-message"></span>
 										</div>
 										<div class="bgn-wf-label">
-											<!-- CHANGE FROM PRONOUN TO TITLE AS THIS IS MORE PRECISE AND EASILY UNDERSTOOD -->
 											Title&nbsp;
 											<span class="bgn-star">&#42;</span>
 										</div>
 										<div class="bgn-wf-field half">
-											<input type="text" id="employer_title" name="Title" class="input" maxlength="100" autocomplete="off" placeholder="Title" required aria-required="true"><br>
+											<input type="text" id="employer_title" name="Title" class="input" maxlength="100" autocomplete="off" placeholder="Please enter your Title" required aria-required="true">
+											<svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+													clip-rule="evenodd">
+											</svg>
+											<svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+													clip-rule="evenodd">
+											</svg>
+											<span class="error-message"></span>
 										</div>
 									</div>
 									<div class="bgn-wf-row">
@@ -244,14 +267,36 @@
 											<span class="bgn-star">&#42;</span>
 										</div>
 										<div class="bgn-wf-field half">
-											<input type="text" id="employer_firstname" name="First Name" class="input" maxlength="80" autocomplete="off" placeholder="First Name" required aria-required="true"><br>
+											<input type="text" id="employer_firstname" name="First Name" class="input" maxlength="80" autocomplete="off" placeholder="Please enter your First Name" required aria-required="true">
+											<svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+													clip-rule="evenodd">
+											</svg>
+											<svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+													clip-rule="evenodd">
+											</svg>
+											<span class="error-message"></span>
 										</div>
 										<div class="bgn-wf-label">
 											Employer Last Name&nbsp;
 											<span class="bgn-star">&#42;</span>
 										</div>
 										<div class="bgn-wf-field half">
-											<input type="text" id="employer_lastname" name="Last Name" class="input" maxlength="40" autocomplete="off" placeholder="Last Name" required aria-required="true"><br>
+											<input type="text" id="employer_lastname" name="Last Name" class="input" maxlength="40" autocomplete="off" placeholder="Please enter your Last Name" required aria-required="true">
+											<svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+													clip-rule="evenodd">
+											</svg>
+											<svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+													clip-rule="evenodd">
+											</svg>
+											<span class="error-message"></span>
 										</div>
 									</div>
 									<div class="bgn-wf-row">
@@ -260,7 +305,18 @@
 											<span class="bgn-star">&#42;</span>
 										</div>
 										<div class="bgn-wf-field full">
-											<input type="email" id="employer_email" name="Email " class="input" maxlength="100" autocomplete="off" placeholder="email" required aria-required="true"><br>
+											<input type="email" id="employer_email" name="Email " class="input" maxlength="100" autocomplete="off" placeholder="Please enter your email" required aria-required="true">
+											<svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+													clip-rule="evenodd">
+											</svg>
+											<svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+													clip-rule="evenodd">
+											</svg>
+											<span class="error-message"></span>
 										</div>
 									</div>
 									<div class="bgn-wf-row">
@@ -269,7 +325,18 @@
 											<span class="bgn-star">&#42;</span>
 										</div>
 										<div class="bgn-wf-field full">
-											<input type="email" id="employer_emailconf" name="Email " class="input" maxlength="100" autocomplete="off" placeholder="confirm email" required aria-required="true"><br>
+											<input type="email" id="employer_emailconf" name="Email Confirmation" class="input" maxlength="100" autocomplete="off" placeholder="Please enter your email to confirm" required aria-required="true">
+											<svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+													clip-rule="evenodd">
+											</svg>
+											<svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+													clip-rule="evenodd">
+											</svg>
+											<span class="error-message"></span>
 										</div>
 									</div>
 									<div class="bgn-wf-row">
@@ -281,7 +348,18 @@
 											<span class="bgn-star">&#42;</span>
 										</div>
 										<div class="bgn-wf-field full">
-											<input type="text" id="employer_street" name="Mailing Street" class="input" maxlength="250" autocomplete="off" placeholder="Street Address" required aria-required="true"><br>
+											<input type="text" id="employer_street" name="Mailing Street" class="input" maxlength="250" autocomplete="off" placeholder="Please enter your Street Address" required aria-required="true">
+											<svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+													clip-rule="evenodd">
+											</svg>
+											<svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+													clip-rule="evenodd">
+											</svg>
+											<span class="error-message"></span>
 										</div>
 									</div>
 									<div class="bgn-wf-row">
@@ -290,14 +368,35 @@
 											<span class="bgn-star">&#42;</span>
 										</div>
 										<div class="bgn-wf-field half">
-											<input type="text" id="employer_city" name="Mailing City" class="input" maxlength="100" autocomplete="off" placeholder="City" required aria-required="true"><br>
+											<input type="text" id="employer_city" name="Mailing City" class="input" maxlength="100" autocomplete="off" placeholder="Please enter your City" required aria-required="true"><svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+													clip-rule="evenodd">
+											</svg>
+											<svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+													clip-rule="evenodd">
+											</svg>
+											<span class="error-message"></span>
 										</div>
 										<div class="bgn-wf-label">
 											Province&frasl;State&nbsp;
 											<span class="bgn-star">&#42;</span>
 										</div>
 										<div class="bgn-wf-field half">
-											<input type="text" id="employer_province" name="Mailing Province" class="input" maxlength="100" autocomplete="off" placeholder="Province&frasl;State" required aria-required="true"><br>
+											<input type="text" id="employer_province" name="Mailing Province" class="input" maxlength="100" autocomplete="off" placeholder="Please enter your Province&frasl;State" required aria-required="true">
+											<svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+													clip-rule="evenodd">
+											</svg>
+											<svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+													clip-rule="evenodd">
+											</svg>
+											<span class="error-message"></span>
 										</div>
 									</div>
 									<div class="bgn-wf-row">
@@ -306,69 +405,96 @@
 											<span class="bgn-star">&#42;</span>
 										</div>
 										<div class="bgn-wf-field half">
-											<input type="text" id="employer_country" name="Mailing Country" class="input" maxlength="100" autocomplete="off" placeholder="Country" required aria-required="true"><br>
+											<input type="text" id="employer_country" name="Mailing Country" class="input" maxlength="100" autocomplete="off" placeholder="Please enter your Country" required aria-required="true">
+											<svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+													clip-rule="evenodd">
+											</svg>
+											<svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+													clip-rule="evenodd">
+											</svg>
+											<span class="error-message"></span>
 										</div>
 										<div class="bgn-wf-label">
 											Postal&frasl;Zip Code&nbsp;
 											<span class="bgn-star">&#42;</span>
 										</div>
 										<div class="bgn-wf-field half">
-											<input type="text" id="employer_mailingcode" name="Mailing Zip" class="input" maxlength="30" autocomplete="off" placeholder="Postal&frasl;Zip Code" required aria-required="true"><br>
+											<input type="text" id="employer_mailingcode" name="Mailing Zip" class="input" maxlength="30" autocomplete="off" placeholder="Please enter your Postal&frasl;Zip Code" required aria-required="true">
+											<svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+													clip-rule="evenodd">
+											</svg>
+											<svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+													clip-rule="evenodd">
+											</svg>
+											<span class="error-message"></span>
 										</div>
 									</div>
 									<div class="bgn-wf-row">
 										<div class="bgn-wf-label">Home Phone &num;</div>
 										<div class="bgn-wf-field half">
-											<input type="tel" id="employer_homephone" name="Home Phone" class="input" maxlength="30" autocomplete="off" placeholder="Home Phone" required aria-required="true"><br>
+											<input type="tel" id="employer_homephone" name="Home Phone" class="input" maxlength="30" autocomplete="off" placeholder="Please enter your Home Phone" required aria-required="true">
+											<svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+													clip-rule="evenodd">
+											</svg>
+											<svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+													clip-rule="evenodd">
+											</svg>
+											<span class="error-message"></span>
 										</div>
 										<div class="bgn-wf-label">
 											Mobile Phone &num;&nbsp;
 											<span class="bgn-star">&#42;</span>
 										</div>
 										<div class="bgn-wf-field half">
-											<input type="tel" id="employer_mobilephone" name="Mobile" class="input" maxlength="30" autocomplete="off" placeholder="Mobile Phone" required aria-required="true"><br>
+											<input type="tel" id="employer_mobilephone" name="Mobile" class="input" maxlength="30" autocomplete="off" placeholder="Please enter your Mobile Phone" required aria-required="true">
+											<svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+													clip-rule="evenodd">
+											</svg>
+											<svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+													clip-rule="evenodd">
+											</svg>
+											<span class="error-message"></span>
 										</div>
 									</div>
-									<!-- <div class="bgn-wf-row">
-							            <div class="bgn-wf-label">
-							                Password&nbsp;
-							                <span class="bgn-star">&#42;</span>
-							            </div>
-							            <div class="bgn-wf-field full">
-							                <input type="password" id="employer_pwd" class="input" autocomplete="off" placeholder="Password" name="pwd"><br>
-							            </div>
-							        </div>
-							        <div class="bgn-wf-row">
-							            <div class="bgn-wf-label">
-							                Confirm Password&nbsp;
-							                <span class="bgn-star">&#42;</span>
-							            </div>
-							        	<div class="bgn-wf-field full">
-							                <input type="password" id="employer_confpwd" class="input" autocomplete="off" placeholder="Confirm Password" name="pwd"><br>
-							            </div>
-							        </div> -->
 									<div class="bgn-wf-row">
-										<div class="bgn-wf-label"></div>
+										<label class="check">
+											<input type="checkbox" id="consentTool" class="check-policy" name="consent">
+											I hereby consent for my information to be used within the CyberCatalyst website&frasl;team&period;
+										</label>
+									</div>
+									<div class="bgn-wf-row">
+										<label class="check">
+											<input type="checkbox" id="privacyTool5564459000000447001" class="check-policy" name="privacyTool">
+											I understand that this website will consider this submission as private and will not publicly disclose the
+											information&period;
+										</label>
+									</div>
+									<div class="bgn-wf-row">
+										<div class="bgn-wf-label">&nbsp;</div>
 										<div class="bgn-wf-field half">
-											<input type="submit" id="formsubmit5564459000000447001" value="Submit" class="button" name="submit"	disabled>
-											<!-- &nbsp;&nbsp;&nbsp; -->
+											<input type="submit" id="formsubmit5564459000000447001" class="button" name="submit" value="Submit" disabled="">
 											<br><br>
 										</div>
 										<div class="bgn-wf-field half">
-											<input type="reset" onclick="disableSubmitwhileReset5564459000000447001()" class="button resetbtn" value="Reset">
+											<input type="reset" id="formreset5564459000000447001" onclick="disableSubmitwhileReset5564459000000447001()" class="button resetbtn" value="Reset">
 										</div>
 									</div>
-									<!-- <span role="alert" class="error" id="nameError01" aria-hidden="true">Please enter Company Name</span>
-							        <span role="alert" class="error" id="nameError02" aria-hidden="true">Please enter Title</span>
-							        <span role="alert" class="error" id="nameError03" aria-hidden="true">Please enter First Name</span>
-							        <span role="alert" class="error" id="nameError04" aria-hidden="true">Please enter Last Name</span>
-							        <span role="alert" class="error" id="nameError05" aria-hidden="true">Please enter email</span>
-							        <span role="alert" class="error" id="nameError06" aria-hidden="true">Please enter Street Address</span>
-							        <span role="alert" class="error" id="nameError07" aria-hidden="true">Please enter City</span>
-							        <span role="alert" class="error" id="nameError08" aria-hidden="true">Please enter Province</span>
-							        <span role="alert" class="error" id="nameError09" aria-hidden="true">Please enter Country</span>
-							        <span role="alert" class="error" id="nameError10" aria-hidden="true">Please enter Postal Code &frasl; Zip</span>
-							        <span role="alert" class="error" id="nameError11" aria-hidden="true">Please enter Mobile Phone &num;</span> -->
 								</div>
 								<script id="wf_script" src="jobboardemployerRegistration_files/WebformScriptServlet"></script>
 							</form>
