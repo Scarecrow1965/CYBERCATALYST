@@ -574,26 +574,27 @@ header {
   display: inline-block;
   margin-right: 45px;
 }
+
 .header__nav__menu ul li {
   list-style: none;
   display: inline-block;
   margin-right: 45px;
   position: relative;
 }
-.header__nav__menu ul li.active a:after {
+
+.header__nav__menu ul li.active a:after, .header__nav__menu ul li:hover a:after {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
 }
-.header__nav__menu ul li:hover a:after {
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-}
+
 .header__nav__menu ul li:hover .dropdown {
   top: 34px;
   opacity: 1;
   visibility: visible;
+}
+.header__nav__menu ul li:hover {
+  background: rgba(60, 147, 213, .05);
 }
 .header__nav__menu ul li:last-child {
   margin-right: 0;
@@ -602,7 +603,7 @@ header {
   position: absolute;
   left: 0;
   top: 60px;
-  width: 140px;
+  width: 170%;
   background: white;
   text-align: left;
   padding: 2px 0;
@@ -617,10 +618,12 @@ header {
 .header__nav__menu ul li .dropdown li {
   display: block;
   margin-right: 0;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  border-top: 1px solid rgba(255,255,255,.1);
 }
 .header__nav__menu ul li .dropdown li a {
   font-size: 14px;
-  color: black;
+  /* color: black; */
   padding: 8px 20px;
   /* top left bottom right */
   text-transform: capitalize;
@@ -654,7 +657,43 @@ header {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
+/* SUBMENU ADDON */
+ul.dropdown li a:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #00bfe7;
+  content: "";
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+ul.submenu {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 170%;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  border-top: 1px solid rgba(255,255,255,.1);
+  background: white;
+}
+ul.submenu li a {
+  width: 100%;
+  background: white;
+  padding: 1rem 1rem;
+}
+ul.submenu li a:hover, ul.submenu li.active>a {
+  background: rgba(60, 147, 213, .05);
+  padding-left: 1.1rem;
+}
 
+/* affects only LinkedIn icon */
 .header__nav__social {
   display: inline-block;
   position: relative;
@@ -665,11 +704,10 @@ header {
   left: 0;
   top: 4px;
   height: 13px;
-  width: 1px;
+  width: 2px;
   background: black;
   content: "";
 }
-/* affects only LinkedIn icon */
 .header__nav__social a {
   color: #662e91;
   font-size: 18px;
@@ -2759,4 +2797,20 @@ footer {
     padding: 30px 40px 35px 35px;
     /* top left bottom right */
   }
+}
+
+/* SCAN SEMINAR 2023 */
+.scan {
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+  /* used for testing purposes only */
+  /* border: 2px dashed violet; */
+  /*  */
+}
+.scan img {
+  /* align-items: center; */
+  margin-left: 150px;
+  padding: 0;
+  box-shadow: 10px 5px 5px 0px red;
 }
