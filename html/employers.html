@@ -2,6 +2,7 @@
 <html lang="en-us" dir="ltr">
     <head>
         <meta charset="UTF-8">
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';"> -->
         <meta name="description" content="Cyber and Software">
         <meta name="keywords" content="Videograph, unica, creative, html">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,36 +10,38 @@
         <link rel="icon" href="img/favicon.ico">
         
         <title>Cyber Catalyst</title>
-
+        
         <!-- Google Font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap">
-
-        <!-- Css Styles -->
+        
+        <!-- CSS Styles -->
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
         <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
         <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+            <!-- magnific popup used for video. (even though it still works on firefox without it)-->
         <!-- <link rel="stylesheet" href="css/magnific-popup.css" type="text/css"> -->
+            <!-- slicknav used for mobile menu -->
         <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-
-        <!-- Js Plugins -->
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-                <!-- only used for top of the page icon and video -->
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <!-- <script src="js/mixitup.min.js"></script> -->
-        <script src="js/masonry.pkgd.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
+        
+        <!-- JavaScript Plugins-->
+        <!-- <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous" type="application/javascript"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous" type="application/javascript"></script>
+        <script src="js/bootstrap.min.js" type="application/javascript"></script>
+            <!-- only used for top of the page icon and video -->
+        <!-- <script src="js/jquery.magnific-popup.min.js" type="application/javascript"></script> -->
+        <script src="js/mixitup.min.js" type="application/javascript"></script>
+        <script src="js/masonry.pkgd.min.js" type="application/javascript"></script>
+        <script src="js/owl.carousel.min.js" type="application/javascript"></script>
             <!-- slicknav used for mobile menu -->
-        <script src="js/jquery.slicknav.js"></script>
-
+        <script src="js/jquery.slicknav.js" type="application/javascript"></script>
             <!-- Must use -->
-        <script src="js/main.js" defer></script>
-        <script src="js/header.js" defer></script>
-        <script src="js/footer.js" defer></script>
-        <script src="js/topbutton.js" defer></script>
+        <script src="js/main.js" type="application/javascript" defer></script>
+        <script src="js/header.js" type="application/javascript" defer></script>
+        <script src="js/footer.js" type="application/javascript" defer></script>
+        <script src="js/topbutton.js" type="application/javascript" defer></script>
 
     </head>
 
@@ -61,7 +64,7 @@
         <!-- Hero Section Begin -->
         <section class="hero">
             <div class="hero__slider owl-carousel">
-                <div class="hero__item10 set-bg" data-setbg="img/pictures/iStock-1194430863.jpg">
+                <div class="hero__item10 set-bg" data-setbg="img/pictures/iStock-1194430863.webp">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6">
@@ -135,15 +138,6 @@
 								    <br>
 							    </div>
                             </div>
-                            <!--<div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="services__item">
-                                    <div class="services__item__icon">
-                                        <img src="../img/icons/si-4.png" alt="">
-                                    </div>
-                                    <h4>Video hosting</h4>
-                                    <p>Whether you’re halfway through the editing process, or you haven’t even started, our post production services can put the finishing touches.</p>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -152,108 +146,10 @@
         <!-- Services Section End -->
 
 
-        <!-- Work Section Begin 
-        <section class="work">
-            <div class="work__gallery">
-                <div class="grid-sizer"></div>
-                <div class="work__item wide__item set-bg" data-setbg="img/work/work-1.jpg">
-                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                            class="fa fa-play"></i></a>
-                    <div class="work__item__hover">
-                        <h4>VIP Auto Tires & Service</h4>
-                        <ul>
-                            <li>eCommerce</li>
-                            <li>Magento</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="work__item small__item set-bg" data-setbg="img/work/work-2.jpg">
-                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                            class="fa fa-play"></i></a>
-                </div>
-                <div class="work__item small__item set-bg" data-setbg="img/work/work-3.jpg">
-                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                            class="fa fa-play"></i></a>
-                </div>
-                <div class="work__item large__item set-bg" data-setbg="img/work/work-4.jpg">
-                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                            class="fa fa-play"></i></a>
-                    <div class="work__item__hover">
-                        <h4>VIP Auto Tires & Service</h4>
-                        <ul>
-                            <li>eCommerce</li>
-                            <li>Magento</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="work__item small__item set-bg" data-setbg="img/work/work-5.jpg">
-                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                            class="fa fa-play"></i></a>
-                </div>
-                <div class="work__item small__item set-bg" data-setbg="img/work/work-6.jpg">
-                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                            class="fa fa-play"></i></a>
-                </div>
-                <div class="work__item wide__item set-bg" data-setbg="img/work/work-7.jpg">
-                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                            class="fa fa-play"></i></a>
-                    <div class="work__item__hover">
-                        <h4>VIP Auto Tires & Service</h4>
-                        <ul>
-                            <li>eCommerce</li>
-                            <li>Magento</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>-->
+        <!-- Work Section Begin -->
         <!-- Work Section End -->
 
-        <!-- Counter Section Begin 
-        <section class="counter">
-            <div class="container">
-                <div class="counter__content">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="counter__item">
-                                <div class="counter__item__text">
-                                    <img src="img/icons/ci-1.png" alt="">
-                                    <h2 class="counter_num">230</h2>
-                                    <p>Compled Projects</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="counter__item second__item">
-                                <div class="counter__item__text">
-                                    <img src="img/icons/ci-2.png" alt="">
-                                    <h2 class="counter_num">1068</h2>
-                                    <p>Happy clients</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="counter__item third__item">
-                                <div class="counter__item__text">
-                                    <img src="img/icons/ci-3.png" alt="">
-                                    <h2 class="counter_num">230</h2>
-                                    <p>Perspective clients</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="counter__item four__item">
-                                <div class="counter__item__text">
-                                    <img src="img/icons/ci-4.png" alt="">
-                                    <h2 class="counter_num">230</h2>
-                                    <p>Compled Projects</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>-->
+        <!-- Counter Section Begin -->
         <!-- Counter Section End -->
 
         <!-- Team Section Begin -->
@@ -263,7 +159,7 @@
         <!-- Latest Blog Section End -->
 
         <!-- Call To Action Section Begin -->
-        <section class="callto spad set-bg" data-setbg="img/pictures/iStock-1071652068.jpg">
+        <section class="callto spad set-bg" data-setbg="img/pictures/iStock-1071652068.webp">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10">
@@ -322,7 +218,7 @@
             </div>
         </section>
 
-        <section class="callto spad set-bg" data-setbg="img/pictures/iStock-1180259937.avif">
+        <section class="callto spad set-bg" data-setbg="img/pictures/iStock-1180259937.webp">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6"></div>
@@ -366,7 +262,7 @@
             <div class="container">
                 <div class="row">
 			        <div class="col-lg-4">
-						<img src="img/pictures/Recruitment-Word-Cloud.jpg" alt="Recruitement World Cloud graphics">
+						<img src="img/pictures/Recruitment-Word-Cloud.webp" alt="Recruitement World Cloud graphics">
                     </div>
                     <div class="col-lg-8">
                         <div class="callto__text2"> 
@@ -391,7 +287,7 @@
         </section>
 	
         <!-- Call To Action Section Begin -->
-        <section class="callto spad set-bg" data-setbg="img/pictures/iStock-1354205086.jpg">
+        <section class="callto spad set-bg" data-setbg="img/pictures/iStock-1354205086.webp">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">

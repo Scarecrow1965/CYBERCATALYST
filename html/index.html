@@ -2,12 +2,12 @@
 <html lang="en-us" dir="ltr">
     <head>
         <meta charset="UTF-8">
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';"> -->
         <meta name="description" content="Cyber and Software">
         <meta name="keywords" content="Videograph, unica, creative, html">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="icon" href="img/favicon.ico">
-        <!-- missing aria enable?? -->
 
         <title>Cyber Catalyst</title>
 
@@ -18,28 +18,30 @@
         <!-- CSS Styles -->
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-        <!-- <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css"> -->
+        <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
         <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-        <!-- magnific popup used for video. (even though it still works on firefox without it)-->
+            <!-- magnific popup used for video. (even though it still works on firefox without it)-->
         <!-- <link rel="stylesheet" href="css/magnific-popup.css" type="text/css"> -->
+            <!-- slicknav used for mobile menu -->
         <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
 
         <!-- JavaScript Plugins-->
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <!-- only used for top of the page icon and video -->
-        <!-- <script src="js/jquery.magnific-popup.min.js"></script> -->
-        <!-- <script src="js/mixitup.min.js"></script> -->
-        <script src="js/masonry.pkgd.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous" type="application/javascript"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous" type="application/javascript"></script>
+        <script src="js/bootstrap.min.js" type="application/javascript"></script>
+            <!-- only used for top of the page icon and video -->
+        <!-- <script src="js/jquery.magnific-popup.min.js" type="application/javascript"></script> -->
+        <!-- <script src="js/mixitup.min.js" type="application/javascript"></script> -->
+        <script src="js/masonry.pkgd.min.js" type="application/javascript"></script>
+        <script src="js/owl.carousel.min.js" type="application/javascript"></script>
             <!-- slicknav used for mobile menu -->
-        <script src="js/jquery.slicknav.js"></script>
+        <script src="js/jquery.slicknav.js" type="application/javascript"></script>
             <!-- Must use -->
-        <script src="js/main.js" defer></script>
-        <script src="js/header.js" defer></script>
-        <script src="js/footer.js" defer></script>
-        <script src="js/topbutton.js" defer></script>
+        <script src="js/main.js" type="application/javascript" defer></script>
+        <script src="js/header.js" type="application/javascript" defer></script>
+        <script src="js/footer.js" type="application/javascript" defer></script>
+        <script src="js/topbutton.js" type="application/javascript" defer></script>
 
     </head>
 
@@ -109,21 +111,14 @@
         <!-- Main company video -->
         <div class="videos-main">
             <iframe src="https://www.youtube.com/embed/_VQ4WuKO13Q?autoplay=0&mute=0" title="Cyber Catalyst Talent Solutions"></iframe>
-            <!-- changed to YouTube from ""../vid/Cyber-Catalyst-Talent-Solutions-2023_002.mp4" -->
+            <!-- changed to YouTube from "../vid/Cyber-Catalyst-Talent-Solutions-2023_002.mp4" -->
             <!-- title changed from Cyber Catalyst Talent Solutions 2023_002.mp4 -->
             <!-- removed scrolling="no" as validator provided warning to it. allowfullscreen="" is removed due to legacy-->
             <!-- <iframe id="myFrame" width="420"  height="345" src="https://www.youtube.com/embed/_VQ4WuKO13Q?autoplay=1&mute=1"></iframe> -->
         </div>
 
-        <!-- <main class="services-extra"> -->
+
         <!-- Services Section Begin -->
-        <!-- <section class="spad"> -->
-            <!-- <div class="container"> -->
-                <!-- <div class="row"> -->
-			        
-                <!-- </div> -->
-            <!-- </div> -->
-        <!-- </section> -->
         <!-- Services Section End -->
 
         <!-- Work Section Begin -->
@@ -209,10 +204,9 @@
             </section>
         </main>
         <!-- Counter Section End -->
-        <!-- </main> -->
 
         <!-- Team Section Begin -->
-        <section class="team spad set-bg" data-setbg="img/pictures/rm373batch3-41.avif">
+        <section class="team spad set-bg" data-setbg="img/pictures/rm373batch3-41.webp">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -364,30 +358,10 @@
         <!-- Team Section End -->
 
         <!-- CONTACT INFORMATION START ?? -->
-        <!-- group email ?? -->
-        <!-- Should this be in the footer? -->
-        <!-- <div class="col-lg-12 p-0"> -->
-            <!-- <div class="team__btn">
-                <a href="#" class="primary-btn">Meet Our Team</a>
-            </div>-->
-        <!-- </div> -->
         <!-- CONTACT INFORMATION END ?? -->
 
 
-        <!-- Call To Action Section Begin 
-        <section class="callto spad set-bg" data-setbg="img/callto-bg.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="callto__text">
-                            <h2>Submit you information to get a weekly report</h2>
-                            <p></p>
-                            <a href="#">Start your stories</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+        <!-- Call To Action Section Begin -->
         <!-- Call To Action Section End -->
 
         <!-- Footer Section Begin -->
