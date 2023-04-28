@@ -8,7 +8,6 @@ const signUpForm2 = document.getElementById("BiginWebToContactForm55644590000004
 // form whole div - id="elementDiv5564459000000447016"
 // id="candidate_firstname"
 const candFirstName = document.getElementById("candidate_firstname");
-// candFirstName.addEventListener('input', validate());
 // id="candidate_lastname"
 const candLastName = document.getElementById("candidate_lastname");
 // id="candidate_username"
