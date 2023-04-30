@@ -33,7 +33,7 @@ template.innerHTML = `
                             <script>
                                 document.write(new Date().getFullYear());
                             </script>
-                            All rights reserved | <a href="index.html" target="_blank">Cyber Catalyst</a>
+                            All rights reserved | <a href="index.html" rel="noopener noreferrer" target="_blank">Cyber Catalyst</a>
                         </p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
