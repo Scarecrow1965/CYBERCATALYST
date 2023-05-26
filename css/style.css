@@ -809,23 +809,30 @@ ul.submenu li a:hover, ul.submenu li.active>a {
   padding-top: 320px;
 }
 /*  */
+/* used in jobboard.html only */
+/* .text2 h2 {
+  color: white;
+  font-size: 80px;
+} */
+/*  */
+
 /* used in index.html only */
 .hero__text h2 {
   color: white;
   /* trying to keep headings size constant */
   font-size: 60px;
+  /* font-size: 40px; */
   font-weight: 700;
-  line-height: 70px;
   text-transform: uppercase;
   margin-bottom: 38px;
   position: relative;
-  top: 100px;
   opacity: 0;
   -webkit-transition: all, 0.5s;
   -o-transition: all, 0.5s;
   transition: all, 0.5s;
 }
 /*  */
+
 /* used in candidates and employers htmls */
 .hero__text h4 {
   background-color: white;
@@ -851,6 +858,7 @@ ul.submenu li a:hover, ul.submenu li.active>a {
   /*  */
   text-transform: uppercase;
 }
+
 /* used in index html only */
 .hero__text span {
   color: white;
