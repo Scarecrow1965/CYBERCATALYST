@@ -17,6 +17,9 @@ template.innerHTML = `
                                     <li><a href="employers.html">Employers</a>
                                         <ul class="dropdown">
                                             <li>
+                                                <a href="jobboardEmployerRegistration.html">REGISTER NOW</a>
+                                            </li>
+                                            <li>
                                                 <a href="employers.html#EXPLORETALENT">HR Services</a>
                                             </li>
                                             <li>
@@ -29,6 +32,9 @@ template.innerHTML = `
                                     </li>
                                     <li><a href="candidates.html">Candidates</a>
                                         <ul class="dropdown">
+                                            <li>
+                                                <a href="jobboardCandidateRegistration.html">REGISTER NOW</a>
+                                            </li>
                                             <li><a href="newpractitioner.html">New Practitioner&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a>
                                                 <ul class="submenu">
                                                     <li>
@@ -90,7 +96,7 @@ template.innerHTML = `
                                 </ul>
                             </nav>
                             <div class="header__nav__social">
-                                <a href="https://www.linkedin.com/company/cyber-catalyst-t-alent-solutions/mycompany/"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/company/cyber-catalyst-talent-solutions/mycompany/"><i class="fa fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
