@@ -81,6 +81,15 @@
 	box-shadow: inset 0 2px 4px 0 grey;
 }
 
+.bgn-wf-field select {
+	position: relative;
+	display: block;
+	color: #2d3748;
+	border-radius: 2px;
+	border: 1px solid #cbd5e0;
+	box-shadow: inset 0 2px 4px 0 grey;
+}
+
 .bgn-star {
 	color: red;
     z-index: 1;
@@ -115,7 +124,7 @@ form .button:disabled {
 		display: block;
 		width: 100%;
 	}
-	.bgn-wf-field input[type=text], .bgn-wf-field select, .bgn-wf-field textarea { width: 100% !important; }
+	.bgn-wf-field input[type=text], .bgn-wf-field select { width: 100% !important; }
 	.bgn-wf-field div > select{ width: auto !important;	}
 	.bgn-wf-label:empty{ display: none; }
 }
