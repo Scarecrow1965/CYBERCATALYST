@@ -37,7 +37,7 @@
 		<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous" type="application/javascript"></script>
 		<script src="js/bootstrap.min.js" type="application/javascript"></script>
 			<!-- only used for top of the page icon and video -->
-		<!-- <script src="js/jquery.magnific-popup.min.js" type="application/javascript"></script> -->
+		<script src="js/jquery.magnific-popup.min.js" type="application/javascript"></script>
 		<!-- <script src="js/mixitup.min.js" type="application/javascript"></script> -->
 		<script src="js/masonry.pkgd.min.js" type="application/javascript"></script>
 		<script src="js/owl.carousel.min.js" type="application/javascript"></script>
@@ -343,7 +343,7 @@
 												<span class="bgn-star">&#42;</span>
 											</div>
 											<div class="bgn-wf-field full">
-												<input type="email" id="candidate_emailconf" name="Email" class="input" maxlength="100" autocomplete="off"
+												<input type="email" id="candidate_emailconf" name="Email_conf" class="input" maxlength="100" autocomplete="off"
 													placeholder="Please enter your email to Confirm" required aria-required="true">
 												<svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
 													fill="currentColor">
@@ -366,9 +366,16 @@
 												<span class="bgn-star">&#42;</span>
 											</div>
 											<div class="bgn-wf-field full">
-												<textarea id="status_req" class="input" name="Description" maxlength="32000" rows="5" cols="50"
-													placeholder="Please enter your Description" required aria-required="true"></textarea>
-												<svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+												<label for="status_req">Are you a:&nbsp;</label>
+												<select id="status_req" class="input" name="Description" required aria-required="true">
+													<option value="&nbsp;" selected>&nbsp;</option>
+													<option value="canadian Veteran">Canadian Veteran</option>
+													<option value="ex&dash;military">ex&dash;military</option>
+													<option value="reservist">Reservist</option>
+													<option value="military spouse">Military Spouse</option>
+													<option value="other">Other</option>
+												</select>
+												<!-- <svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
 													fill="currentColor">
 													<path fill-rule="evenodd"
 														d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -376,6 +383,27 @@
 												</svg>
 												<svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
 													fill="currentColor">
+													<path fill-rule="evenodd"
+														d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+														clip-rule="evenodd">
+												</svg> -->
+												<span class="error-message"></span>
+											</div>
+										</div>
+										<div class="bgn-wf-row">
+											<div class="bgn-wf-label">
+												Coupon Code
+											</div>
+											<div class="bgn-wf-field full">
+												<input type="text" id="coupon_code" name="Coupon Code" class="input" maxlength="50" autocomplete="off"
+													placeholder="Please enter your Coupon Code (if available)">
+												<svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+													fill="currentColor">
+													<path fill-rule="evenodd"
+														d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+														clip-rule="evenodd">
+												</svg>
+												<svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
 													<path fill-rule="evenodd"
 														d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
 														clip-rule="evenodd">
@@ -413,6 +441,7 @@
 											<div class="bgn-wf-field half">
 												<input type="submit" id="formsubmit5564459000000447016" class="button" name="submit" value="Submit"
 													disabled>
+													<br><br>
 											</div>
 											<div class="bgn-wf-field half">
 												<input type="reset" id="formreset5564459000000447016" onclick="disableSubmitwhileReset5564459000000447016()"

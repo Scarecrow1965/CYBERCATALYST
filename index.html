@@ -27,10 +27,10 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
 
         <!-- JavaScript Plugins-->
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous" type="application/javascript"></script>
+        <script src="js/jquery-3.7.0.min.js" type="application/javascript"></script>
         <script src="js/bootstrap.min.js" type="application/javascript"></script>
             <!-- only used for top of the page icon and video -->
-        <!-- <script src="js/jquery.magnific-popup.min.js" type="application/javascript"></script> -->
+        <script src="js/jquery.magnific-popup.min.js" type="application/javascript"></script>
         <!-- <script src="js/mixitup.min.js" type="application/javascript"></script> -->
         <script src="js/masonry.pkgd.min.js" type="application/javascript"></script>
         <script src="js/owl.carousel.min.js" type="application/javascript"></script>
@@ -58,18 +58,18 @@
         </div>
 
         <!-- Header Section Begin -->
-        <!-- header.js installed here -->        
+        <!-- header.js installed here -->       
         <!-- Header End -->
 
         <!-- Hero Carousel Section Begin -->
         <section class="hero">
-            <div class="hero__slider owl-carousel set-bg" data-setbg="img/pictures/rm373batch3-40.jpg">
+            <div class="hero__slider owl-carousel set-bg" data-setbg="img/pictures/rm373batch3-40.webp">
                 <div class="hero__item">
                     <div class="container container-owl-carousel">
                         <div class="row">
                             <div class="col-lg-8">	
                                 <div class="hero__text">
-                                    <!-- <span>Talent Solutions</span> -->
+                                    <span>&nbsp;</span>
                                     <h2>Employers&colon; Find the Talent You are Looking For</h2>
                                     <a href="employers.html" class="primary-btn">See more about us</a>
                                 </div>
@@ -82,7 +82,7 @@
                         <div class="row">
                             <div class="col-lg-8">
                                 <div class="hero__text">
-                                    <!-- <span>Talent Solutions</span> -->
+                                    <span>&nbsp;</span>
                                     <h2>Students&colon; Grow Your Career</h2>
                                     <a href="candidates.html" class="primary-btn">See more about us</a>
                                 </div>
@@ -95,29 +95,12 @@
                         <div class="row">
                             <div class="col-lg-10">
                                 <div class="hero__text">
-                                    <!-- <span>Talent Solutions</span> -->
-                                    <!-- <h2>Get the Recognition You Deserve​</h2> -->
-                                    <h2>To help veterans transition into tech jobs: We offer fast, focused training, and support to learn the skills needed
-                                        for software and cyber security careers.
-                                    </h2>
-                                    <a href="whoweare.html" class="primary-btn">See more about us</a>
+                                    <span>&nbsp;</span>
+                                    <h2>Equipping veterans for tech success&colon; Master your path&period;</h2>
+                                    <a href="techvets.html" class="primary-btn">See more about us</a>
                                 </div>
                             </div>
             			</div>
-                    </div>
-                </div>
-                <div class="hero__item">
-                    <div class="container container-owl-carousel">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <div class="hero__text">
-                                    <!-- <span>Talent Solutions</span> -->
-                                    <!-- <h2>Get the Recognition You Deserve​</h2> -->
-                                    <h2>To help veterans transition into tech jobs: We provide guidance in sustainable job placement in the tech industry.</h2>
-                                    <a href="whoweare.html" class="primary-btn">See more about us</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -127,6 +110,7 @@
         <!-- Main company video -->
         <div class="videos-main">
             <iframe src="https://www.youtube.com/embed/_VQ4WuKO13Q?autoplay=0&mute=0" title="Cyber Catalyst Talent Solutions"></iframe>
+            <!-- removed width="100%" height="100%" frameborder="0" from iframe src -->
             <!-- changed to YouTube from "../vid/Cyber-Catalyst-Talent-Solutions-2023_002.mp4" -->
             <!-- <iframe id="myFrame" width="420"  height="345" src="https://www.youtube.com/embed/_VQ4WuKO13Q?autoplay=1&mute=1"></iframe> -->
         </div>
@@ -141,19 +125,17 @@
         <main class="services-extra spad">
             <section class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title team__title">
-                            <span>Cyber Catalyst</span>
-                            <h1>In Numbers</h1>
-                        </div>
+                    <div class="section-title team__title">
+                        <span>Cyber Catalyst</span>
+                        <h1>In Numbers</h1>
                     </div>
                 </div>
             </section>
             <section class="counter" data-module="countup">
-                <div class="container">
+                <div class="counter-container">
                     <div class="counter__content">
                         <div class="row">
-                            <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="col-lg-3 col-md-5 col-sm-7">
                                 <div class="counter__item">
                                     <div class="counter__item__text">
                                         <img src="img/icons/ci-1.png" alt="">
@@ -166,7 +148,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="col-lg-3 col-md-5 col-sm-7">
                                 <div class="counter__item second__item">
                                     <div class="counter__item__text">
                                         <img src="img/icons/ci-2.png" alt="">
@@ -181,7 +163,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="col-lg-3 col-md-5 col-sm-7">
                                 <div class="counter__item third__item">
                                     <div class="counter__item__text">
                                         <img src="img/icons/ci-3.png" alt="">
@@ -196,7 +178,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="col-lg-3 col-md-5 col-sm-7">
                                 <div class="counter__item fourth__item">
                                     <div class="counter__item__text">
                                         <img src="img/icons/ci-4.png" alt="">
@@ -292,7 +274,7 @@
                 <br>
 			    <div class="row">
     				<div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                        <div class="team__item team__item--fourth set-bg" data-setbg="img/team/MNP.avif">
+                        <div class="team__item team__item--fourth set-bg" data-setbg="img/team/mnp.avif">
                             <div class="team__item__text">
                                 <h4><a href="https://www.mnp.ca/en" target="_blank" rel="noopener">MNP</a></h4>
                             </div>
