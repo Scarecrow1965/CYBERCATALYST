@@ -20,14 +20,14 @@
     /*------------------
             Portfolio filter
         --------------------*/
-    $(".portfolio__filter li").on("click", function () {
-      $(".portfolio__filter li").removeClass("active");
-      $(this).addClass("active");
-    });
-    if ($(".portfolio__gallery").length > 0) {
-      var containerEl = document.querySelector(".portfolio__gallery");
-      var mixer = mixitup(containerEl);
-    }
+    // $(".portfolio__filter li").on("click", function () {
+    //   $(".portfolio__filter li").removeClass("active");
+    //   $(this).addClass("active");
+    // });
+    // if ($(".portfolio__gallery").length > 0) {
+    //   var containerEl = document.querySelector(".portfolio__gallery");
+    //   var mixer = mixitup(containerEl);
+    // }
   });
 
   /*------------------
@@ -48,10 +48,10 @@
   /*------------------
 		Navigation
 	--------------------*/
-  $(".mobile-menu").slicknav({
-    prependTo: "#mobile-menu-wrap",
-    allowParentLinks: true,
-  });
+  // $(".mobile-menu").slicknav({
+  //   prependTo: "#mobile-menu-wrap",
+  //   allowParentLinks: true,
+  // });
 
   /*------------------
 		Hero Slider
@@ -78,31 +78,6 @@
       $(this).html(index);
     }
   });
-
-  /*------------------
-        Latest Slider
-    --------------------*/
-  // $(".latest__slider").owlCarousel({
-  //   loop: true,
-  //   margin: 0,
-  //   items: 3,
-  //   dots: true,
-  //   dotsEach: 2,
-  //   smartSpeed: 1200,
-  //   autoHeight: false,
-  //   autoplay: true,
-  //   responsive: {
-  //     992: {
-  //       items: 3,
-  //     },
-  //     768: {
-  //       items: 2,
-  //     },
-  //     320: {
-  //       items: 1,
-  //     },
-  //   },
-  // });
 
   // --------------------------------------------------------
   // counter to work when scrolling to postion for index.html

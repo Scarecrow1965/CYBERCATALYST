@@ -131,6 +131,20 @@ class FormValidatorCandidate {
       }
     }
 
+    if (field.id === "coupon_code") {
+      // max 50 alphanumeric characters including space hyphen and underscore
+      const regex =
+        /([A-Za-zÀ-ÖØ-öø-ÿ\d\s\-\'\/\;\.\,][^\_\{\}|\!\@\#\$\%\&\?\"\~\^\*\(\)\n\r\t\f\v]+){1,50}/;
+      // used for testing purposes only: this will display regex if used
+      // console.log("This is the regex being used on alphanumeric: ", regex);
+      //
+      if (regex.test(field.value)) {
+        this.setStatus(field, null, "success");
+      } else {
+        this.setStatus(field, "Please enter valid information", "error");
+      }
+    }
+
     if (field.id === "candidate_street") {
       // max 250 alphanumeric characters including space hyphen and underscore
       const regex = /^(\b\D+\b)?\s*(\b.*?\d.*?\b)\s*(\b\D+\b)?$/;
@@ -220,6 +234,7 @@ const fields = [
   "candidate_email",
   "candidate_emailconf",
   "status_req",
+  "coupon_code"
 ];
 
 const validator = new FormValidatorCandidate(form, fields);
@@ -227,48 +242,49 @@ validator.initialize();
 
 // RESET BUTTON ACTIVATION
 function disableSubmitwhileReset5564459000000447016() {
-  var submitbutton = document.getElementById("formsubmit5564459000000447016");
+  var submitbutton = document.getElementById('formsubmit5564459000000447016');
   if (
-    document.getElementById("privacyTool5564459000000447016") !== null ||
-    document.getElementById("consentTool") !== null
+    document.getElementById('privacyTool5564459000000447016') !== null ||
+    document.getElementById('consentTool') !== null
   ) {
     submitbutton.disabled = true;
-    submitbutton.style.opacity = "0.2;";
+    submitbutton.style.opacity = '0.5;';
   } else {
-    submitbutton.removeAttribute("disabled");
+    submitbutton.removeAttribute('disabled');
   }
 }
 
 function checkMandatory5564459000000447016() {
+  // mandatory fields by name
   var mndFields = new Array(
-    "First Name",
-    "Last Name",
-    "Email",
-    "Mobile",
-    "Mailing Country",
-    // added province
-    "Mailing Province",
-    "Mailing City",
-    "Mailing Street",
-    "Mailing Zip",
-    "Description",
-    "theFile"
+    'First Name',
+    'Last Name',
+    'Email',
+    'Mobile',
+    'Mailing Country',
+    'Mailing Province',
+    'Mailing City',
+    'Mailing Street',
+    'Mailing Zip',
+    'Description',
+    'theFile'
   );
 
+  // fields of the form to be validated by name
   var fldLangVal = new Array(
-    "Candidate First Name",
-    "Candidate Last Name",
-    "Email",
-    "Mobile",
-    "Mailing Country",
-    // added province
-    "Mailing Province",
-    "Mailing City",
-    "Mailing Street",
-    "Mailing Zip",
-    "Status",
-    "Upload Resume"
-  );
+    'Candidate First Name',
+    'Candidate Last Name',
+    'Email',
+    'Mobile',
+    'Mailing Country',
+    'Mailing Province',
+    'Mailing City',
+    'Mailing Street',
+    'Mailing Zip',
+    'Status',
+    'Upload Resume',
+    'Coupon Code'
+ );
 
   var i;
   var mndFieldslength = mndFields.length;
@@ -278,29 +294,29 @@ function checkMandatory5564459000000447016() {
     fieldObj =
       document.forms.BiginWebToContactForm5564459000000447016[mndFields[i]];
     if (fieldObj) {
-      if (fieldObj.value.replace(/^s+|s+$/g, "").length === 0) {
-        if (fieldObj.type === "file") {
-          alert("Please select a file to upload.");
+      if (fieldObj.value.replace(/^s+|s+$/g, '').length === 0) {
+        if (fieldObj.type === 'file') {
+          alert('Please select a file to upload.');
           fieldObj.focus();
           return false;
         }
-        alert(fldLangVal[i] + " cannot be empty.");
+        alert(fldLangVal[i] + ' cannot be empty.');
         fieldObj.focus();
         return false;
-      } else if (fieldObj.nodeName === "SELECT") {
-        if (fieldObj.options[fieldObj.selectedIndex].value === "-None-") {
-          alert(fldLangVal[i] + " cannot be none.");
+      } else if (fieldObj.nodeName === 'SELECT') {
+        if (fieldObj.options[fieldObj.selectedIndex].value === '-None-') {
+          alert(fldLangVal[i] + ' cannot be none.');
           fieldObj.focus();
           return false;
         }
-      } else if (fieldObj.type === "checkbox") {
+      } else if (fieldObj.type === 'checkbox') {
         if (fieldObj.checked === false) {
-          alert("Please accept  " + fldLangVal[i]);
+          alert('Please accept  ' + fldLangVal[i]);
           fieldObj.focus();
           return false;
         }
       }
-      if (fieldObj.name === "Last Name" && fieldObj.value) {
+      if (fieldObj.name === 'Last Name' && fieldObj.value) {
         name = fieldObj.value;
       }
     }

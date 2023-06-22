@@ -5,14 +5,16 @@ template.innerHTML = `
                 <div class="row">
                     <div class="col-lg-2">
                         <div class="header__logo">
-                            <a class="img-responsive" href="index.html"><img src="img/logo.png" alt=""></a>
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="direct link to cybercatalyst logo">
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-10">
-                        <div class="header__nav__option">
+                        <div class="header__nav__option" aria-label="Primary menu">
                             <nav class="header__nav__menu mobile-menu">
                                 <ul>
-                                    <li><a href="techvets.html">TECHVETS</a></li>
+                                    <li><a href="techvets.html">TechVets</a></li>
                                     <li><a href="jobboard.html">Job board</a></li>
                                     <li><a href="employers.html">Employers</a>
                                         <ul class="dropdown">
@@ -26,7 +28,7 @@ template.innerHTML = `
                                                 <a href="employers.html#CONNECTTO">Jobs and Training</a>
                                             </li>
                                             <li>
-                                                <a href="employers.html#SEEHOW">Resources</a>
+                                                <a href="employers.html#SEEHOW">Funding</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -35,10 +37,11 @@ template.innerHTML = `
                                             <li>
                                                 <a href="jobboardCandidateRegistration.html">REGISTER NOW</a>
                                             </li>
-                                            <li><a href="newpractitioner.html">New Practitioner&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a>
-                                                <ul class="submenu">
+                                            <li aria-haspopup="true">
+                                                <a href="newpractitioner.html">New Practitioner</a>
+                                                <ul class="submenu" aria-label="submenu">
                                                     <li>
-                                                        <a href="cyberdefenseanalyst.html">Cyber Defense Analyst</a>
+                                                        <a href="cyberDefenseAnalyst.html">Cyber Defense Analyst</a>
                                                     </li>
                                                     <li>
                                                         <a href="securityControlAssessor.html">Security Control Assessor</a>
@@ -78,13 +81,16 @@ template.innerHTML = `
                                             <li>
                                                 <a href="candidates.html#SEEHOW">Information Display</a>
                                             </li>
+                                            <li>
+                                                <a href="candidates.html#TRAININGPARTNERS">Training/Job&dash;Readiness Partners</a>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li><a href="whoweare.html">Who we are</a>
                                         <ul class="dropdown">
                                             <li>
                                                 <a href="whoweare.html#aboutus">About Us</a>
-                                             </li>
+                                            </li>
                                             <li>
                                                 <a href="whoweare.html#aboutus">Training Partners</a>
                                             </li>
@@ -101,29 +107,38 @@ template.innerHTML = `
                         </div>
                     </div>
                 </div>
-                <div id="mobile-menu-wrap"></div>
+                <div id="mobile-menu-wrap"></div><!-- id="mobile-menu-wrap" is part of the slicknav/responsive aspect of a menu bar-->
             </div>
         </header>
 `;
 document.body.appendChild(template.content);
 
+// HEADER SUBMENU FUNCTIONS
+// Hide SubMenus.
+$(".submenu").hide();
+
+// Shows SubMenu when it's parent is hovered.
+$(".submenu")
+  .parent("li")
+  .hover(function () {
+    $(this).find(">.submenu").not(":animated").slideDown(300);
+    $(this).toggleClass("active ");
+  });
+
+// Hides SubMenu when mouse leaves the zone.
+$(".submenu")
+  .parent("li")
+  .mouseleave(function () {
+    $(this).find(">.submenu").slideUp(150);
+  });
+
 // HEADER FUNCTION
-
-  // Hide SubMenus.
-  $(".submenu").hide();
-
-  // Shows SubMenu when it's parent is hovered.
-  $(".submenu")
-    .parent("li")
-    .hover(function () {
-      $(this).find(">.submenu").not(":animated").slideDown(300);
-      $(this).toggleClass("active ");
-    });
-
-  // Hides SubMenu when mouse leaves the zone.
-  $(".submenu")
-    .parent("li")
-    .mouseleave(function () {
-      $(this).find(">.submenu").slideUp(150);
-    });
-
+  $(".mobile-menu").slicknav({
+    label: "MENU", // default value "MENU"
+    parentTag: "a", // default value "a"
+    prependTo: "#mobile-menu-wrap",
+    duplicate: true, // default value true, clones the original menu to mobile.
+    allowParentLinks: true,
+    nestedParentLinks: false, // default value true
+    showChildren: false, // default false
+  });

@@ -7,7 +7,7 @@ canvas.width = window.innerWidth;
 // used for testing purposes only
 console.log("width of canvas: ", canvas.width);
 // 
-canvas.height = window.innerHeight;
+canvas.height = window.innerHeight; // changed from canvas.height = window.innerHeight * 1.2;
 // used for testing purposes only
 console.log("height of canvas: ", canvas.height);
 //
@@ -85,7 +85,7 @@ class Effect {
 
 const effect = new Effect(canvas.width, canvas.height);
 let lastTime = 0;
-const fps = 15;
+const fps = 30;
 const nextFrame = 1000 / fps;
 let timer = 0;
 
