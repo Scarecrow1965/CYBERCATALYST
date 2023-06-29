@@ -92,10 +92,7 @@ template.innerHTML = `
                                                 <a href="whoweare.html#aboutus">About Us</a>
                                             </li>
                                             <li>
-                                                <a href="whoweare.html#aboutus">Training Partners</a>
-                                            </li>
-                                            <li>
-                                                <a href="whoweare.html#whoweare">Resources</a>
+                                                <a href="whoweare.html#whoweare">Board Members</a>
                                             </li>
                                         </ul>
                                     </li>
