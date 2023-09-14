@@ -1,0 +1,21 @@
+/* iframe for blog page */
+.survey {
+    text-align: center;
+    justify-content: center;
+}
+
+.survey iframe {
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 1000px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.underconstruction img {
+    width: auto;
+    height: 300px;
+}
+
+/*  */

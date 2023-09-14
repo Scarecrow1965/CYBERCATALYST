@@ -1,3 +1,163 @@
-/*  */
-/* Not used at this time */
+/* --------------------------------------------- */
+/* PRACTITIONER BACKGROUND, BUTTONS, AND COLOURS */
+/* --------------------------------------------- */
+.pract-title {
+    padding-left: 130px;
+    padding-right: 130px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+/* overall enveloping block*/
+.careers {
+    /* used for testing purposes only */
+    /* border: 2px dashed violet; */
+    /*  */
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+}
+
+/* seperating section blocks */
+.card {
+    width: 30%;
+    margin: 0px 10px 0px 10px;
+    /* top left bottom right */
+    background: inherit;
+}
+/* section block img criteria */
+.cardimg {
+    z-index: 10;
+    display: grid;
+    justify-content: center;
+}
+.cardimg img {
+    width: auto;
+    max-width: 500px;
+    height: 125px;
+    justify-content: center;
+}
+
+.career-title {
+    /* used for testing purposes only */
+    /* border: 2px dashed white; */
+    /*  */
+    max-width: auto;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    background: inherit;
+}
+
+.career-positions {
+    /* used fort testing purposes only */
+    /* border: 2px dashed yellow; */
+    /*  */
+    padding-top: 20px;
+    display: inline-flex;
+    justify-content: center;
+    background: inherit;
+}
+
+/* providing colours to each section block */
+/* software */
+.pos-ta {
+    background-color: blue;
+    z-index: 1;
+}
+
+/* network */
+.pos-tb {
+    background-color: #ff7417;
+    z-index: 1;
+}
+
+/* defence */
+.pos-tc {
+    background-color: green;
+    z-index: 1;
+}
+
+/* forensics */
+.pos-td {
+    background-color: red;
+    z-index: 1;
+}
+
+/* creating button blocks to each group */
+.btn2 {
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    position: relative;
+    width: 175px;
+    height: 100px;
+}
+
+.btn2:active {
+    -webkit-transform: translate(0px, 5px);
+    transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+}
+
+/* reactive button t oeach button blocks */
+.blue {
+    background-color: blue;
+    z-index: 1;
+    box-shadow: 5px 5px 5px 0px #3C93D5;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
+.blue:hover {
+    background-color: #6FC6FF;
+}
+
+.green {
+    background-color: green;
+    z-index: 1;
+    box-shadow: 5px 5px 5px 0px #15B358;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
+.green:hover {
+    background-color: #48E68B;
+}
+
+.red {
+    background-color: red;
+    z-index: 1;
+    box-shadow: 5px 5px 5px 0px #CE3323;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
+.red:hover {
+    background-color: #FF6656;
+}
+
+.orange {
+    background-color: #ff7417;
+    z-index: 1;
+    box-shadow: 5px 5px 5px 0px #CC7722;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
+.orange:hover {
+    background-color: #FF983C;
+}
+
+/* TO BE USED AT A LATER DATE */
+/* .purple {
+  background-color: #9b59b6;
+  box-shadow: 0px 5px 0px 0px #82409D;
+}
+.purple:hover { background-color: #B573D0; } */
+/* .yellow {
+  background-color: #f1c40f;
+  box-shadow: 0px 5px 0px 0px #D8AB00;
+}
+.yellow:hover { background-color: #FFDE29; } */
 /*  */

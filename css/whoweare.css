@@ -1,0 +1,136 @@
+/* -----------------------
+  Read More / Read Less button in whoweare.html
+  ------------------------ */
+.post button {
+    padding: 10px;
+    background-color: navy;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.post:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.hide {
+    display: none;
+}
+
+/*  */
+
+/*---------------------
+  About - whoweare webpage
+-----------------------*/
+.about {
+    background: black;
+    padding-bottom: 150px;
+}
+
+.about__pic__item {
+    height: 235px;
+    margin-right: -10px;
+    margin-bottom: 20px;
+}
+
+.about__pic__item.about__pic__item--large {
+    height: 490px;
+}
+
+.about__text {
+    padding-left: 30px;
+}
+
+.about__text .services__item .services__item__icon:after {
+    border-color: #281A3E;
+}
+
+.about__text__desc {
+    margin-top: -10px;
+}
+
+.about.content {
+    white-space: pre-line;
+}
+
+.about.content p pre {
+    color: white;
+}
+
+/* ------------------------
+  Board members' box
+   ----------------------- */
+.cards-block {
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    /* top left bottom right */
+    /* border: none; */
+    border-top: 1px solid black;
+    box-shadow: none;
+}
+
+.cards {
+    overflow: hidden;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 white, 0 0 0 1px white;
+    margin-top: 20px;
+}
+
+.main-grid {
+    /* used for testing purposes only */
+    /* background:pink; */
+    /*  */
+    display: grid;
+    grid-template-columns: 300px auto 50px;
+    grid-column-gap: 15px;
+
+    padding: 10px 5px;
+    /* top and bottom | left and right */
+}
+
+.inner-grid {
+    /* used for testing purposes only */
+    /* background:aqua; */
+    /* border:2px solid yellow; */
+    /*  */
+    padding: 2px;
+}
+
+.member1 {
+    background: #38125e;
+}
+
+.main-grid2 {
+    /* used for testing purposes only */
+    /* background:pink; */
+    /*  */
+    display: grid;
+    grid-template-columns: 50px auto 300px;
+    grid-column-gap: 15px;
+    padding: 10px 5px;
+    /* top and bottom | left and right */
+}
+
+.member2 {
+    background: blue
+}
+
+.images1 img {
+    border-radius: 40%;
+    float: left;
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+}
+
+.images2 img {
+    border-radius: 40%;
+    float: right;
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+}
