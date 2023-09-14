@@ -86,6 +86,7 @@ template.innerHTML = `
                                             </li>
                                         </ul>
                                     </li>
+                                    <li><a href="blog.html">Blog</a>
                                     <li><a href="whoweare.html">Who we are</a>
                                         <ul class="dropdown">
                                             <li>
