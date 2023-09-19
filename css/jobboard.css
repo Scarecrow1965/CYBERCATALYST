@@ -170,3 +170,65 @@ form .button:disabled {
 	 outline: none;
 	 border: 1px solid blue;
 }
+
+/* TESING PURPOSES FOR PROGRESS BAR */
+/* from: https: //code-boxx.com/simple-javascript-progress-bar/ */
+/* (A) SHARED */
+.pb-wrap, .pb-wrap * { box-sizing: border-box; }
+.pb-wrap, .pb-percent { width: 100%; }
+.pb-wrap, .pb-bar, .pb-percent { height: 30px; }
+
+/* (B) STACK BACKGROUND-BAR-PERCENTAGE */
+.pb-wrap { position: relative; }
+.pb-bar, .pb-percent { position: absolute; }
+.pb-wrap { z-index: 1; }
+.pb-bar { z-index: 2; }
+.pb-percent { z-index: 3; }
+
+/* (C) WRAPPER */
+.pb-wrap { max-width: 400px;
+	/* optional */
+	background: #f2f2f2;
+}
+
+/* (D) BAR */
+.pb-bar {
+	background: #d3deff;
+	transition: width 0.5s;
+}
+
+/* (E) PERCENTAGE */
+.pb-percent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* (F) THEMES - FEEL FREE TO REMOVE THESE IF YOU DON'T LIKE */
+/* (F1) CODE */
+.pb-wrap.code { background: #333; }
+.pb-wrap.code .pb-bar { background: #219521; }
+.pb-wrap.code .pb-percent { 
+	font-family: Courier, monospace;
+	font-weight: 700;
+	color: #fff;
+}
+
+/* (F2) BLUE */
+.pb-wrap.blue { background: #6690e5; }
+.pb-wrap.blue .pb-bar { background: #1b4497; }
+.pb-wrap.blue .pb-percent { 
+	font-family: Tahoma, sans-serif;
+	color: #fff;
+}
+
+/* (F3) DRACULA */
+.pb-wrap.dracula { background: #3c3c3c; }
+.pb-wrap.dracula .pb-bar { background: #971a1a; }
+.pb-wrap.dracula .pb-percent {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	font-weight: 700;
+}
+
+/* from https: //www.codingnepalweb.com/file-upload-with-progress-bar-html-javascript/ */
