@@ -365,3 +365,39 @@ function checkedFunc(element1Id, element2Id) {
     mybutton.setAttribute("disabled", "disabled");
   }
 }
+
+// TESTING PURPOSES ONLY PROGRESS BAR
+// from: https://code-boxx.com/simple-javascript-progress-bar/
+
+function pb(instance) {
+  // (A) ADD PROGRESS BAR HTML & CSS
+  instance.classList.add("pb-wrap");
+  instance.innerHTML = `<div class="pb-bar"></div>
+     <div class="pb-percent">0%</div>`;
+  instance.hbar = instance.querySelector(".pb-bar");
+  instance.hpercent = instance.querySelector(".pb-percent");
+
+  // (B) SET PROGRESS
+  instance.set = (percent) => {
+    instance.hbar.style.width = percent + "%";
+    instance.hpercent.innerHTML = percent + "%";
+  };
+
+  // (C) DONE
+  return instance;
+}
+
+// (D) ATTACH PROGRESS BAR
+window.onload = () => {
+  let mybar = pb(document.getElementById("demo"));
+  mybar.set(30);
+
+  // (X) DOES NOT MATTER - FOR CONVENIENCE OF THIS DEMO
+  document.getElementById("demoTheme").onchange = function () {
+    mybar.className = this.value;
+    mybar.classList.add("pb-wrap");
+  };
+  document.getElementById("demoVal").onchange = function () {
+    mybar.set(this.value);
+  };
+};

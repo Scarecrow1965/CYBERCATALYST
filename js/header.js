@@ -53,6 +53,9 @@ template.innerHTML = `
                                                         <a href="networkOprSpecialist.html">Network Operations Specialist</a>
                                                     </li>
                                                     <li>
+                                                        <a href="networkEngineer.html">Network Engineer</a>
+                                                    </li>
+                                                    <li>
                                                         <a href="lawEnforcementDigitalForensics.html">Law Enforcement Digital Forensics</a>
                                                     </li>
                                                     <li>
