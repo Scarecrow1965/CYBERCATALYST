@@ -35,7 +35,7 @@
 		<link href="https://static.acuspire.ai/css/app.css" rel="stylesheet">
 		
 		<!-- JavaScript Plugins-->
-		<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous" type="application/javascript"></script>
+		<script src="js/jquery-3.7.0.min.js" type="application/javascript"></script>
 		<script src="js/bootstrap.min.js" type="application/javascript"></script>
 			<!-- only used for top of the page icon and video -->
 		<script src="js/jquery.magnific-popup.min.js" type="application/javascript"></script>
@@ -421,7 +421,12 @@
 												<label>
 													<input type="file" id="theFile" name="theFile" multiple required aria-required="true">
 													<p>File(s) total size limit is 20MB.</p>
+													<!-- There is no progress bar nor a means of verifying the files before the formal SUBMIT button is pressed -->
+													<!-- progress bar CSS and JS are installed into their respective jobboardCandidates css and js files -->
+													<!-- should include a smaller submit button to temporarily load them into a temp storage space. -->
 												</label>
+												<div class="progress-area"></div> <!-- to display ther progress bar -->
+												<div class="uploaded-area"></div> <!-- to display file icon with filename of temp uploaded file -->
 											</div>
 										</div>
 										<div class="bgn-wf-row">
