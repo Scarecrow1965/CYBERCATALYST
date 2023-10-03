@@ -2,6 +2,16 @@
 <html lang="en-us" dir="ltr">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy"
+         content="script-src 'self' 'unsafe-inline' https: https://bigin.zoho.com https://forms.office.com;
+                    style-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com;
+                    img-src 'self';
+                    frame-src 'self' https://www.youtube.com https://forms.office.com;
+                    child-src 'self' https://www.youtube.com https://forms.office.com;
+                    frame-ancestors https://www.youtube.com https://forms.office.com;
+                    base-uri 'self';
+                    prefetch-src 'none';
+                ">
         <meta name="description" content="Cyber and Software">
         <meta name="keywords" content="Videograph, unica, creative, html">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,19 +39,20 @@
         
         <!-- JavaScript Plugins-->
         <script src="js/jquery-3.7.0.min.js" type="application/javascript"></script>
-        <script src="js/bootstrap.min.js"> </script>
+        <script src="js/bootstrap.min.js" type="application/javascript"></script>
             <!-- only used for top of the page icon and video -->
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/mixitup.min.js" ></script>
-        <script src="js/masonry.pkgd.min.js" ></script>
-        <script src="js/owl.carousel.min.js" ></script>
+        <script src="js/jquery.magnific-popup.min.js" type="application/javascript"></script>
+        <script src="js/mixitup.min.js" type="application/javascript"></script>
+        <script src="js/masonry.pkgd.min.js" type="application/javascript"></script>
+        <script src="js/owl.carousel.min.js" type="application/javascript"></script>
             <!-- slicknav used for mobile menu -->
-        <script src="js/jquery.slicknav.js" ></script>
+        <script src="js/jquery.slicknav.js" type="application/javascript"></script>
             <!-- Must use -->
-        <script src="js/main.js" defer></script>
-        <script src="js/header.js" defer></script>
-        <script src="js/footer.js" defer></script>
-        <script src="js/topbutton.js" defer></script>
+        <script src="js/main.js" type="application/javascript" defer></script>
+        <script src="js/header.js" type="application/javascript" defer></script>
+        <script src="js/footer.js" type="application/javascript" defer></script>
+        <script src="js/topbutton.js" type="application/javascript" defer></script>
+        <script src="js/blog.js" type="application/javascript" defer></script>
 
     </head>
 
@@ -61,16 +72,17 @@
         <!-- Header Section Begin -->
         <!-- header.js installed here -->
         <!-- Header End -->
-        <main>
-        <div class="container spad3">
+
+        <main class="container">
+        <div class="spad3">
                 <h1>Welcome to the Blog and Survey page</h1>     
         </div>
-        <div class="container section-title">
+        <div class="section-title">
             <br>
                 <h2>Below are two surveys.</h2>
             <br>
         </div>
-        <div class="container survey" role="document">
+        <div class="survey" role="document">
             <iframe title="Cyber Awareness Quiz for Parents" src="https://forms.office.com/Pages/ResponsePage.aspx?id=6qhEt_QrtkCar2m-KrMUOvj_asUGxw1JpZ6nugHRxRNUOFJWRVMySkNMODlBUTNaM0JQUTBRMTNXSC4u&embed=true"> </iframe>
             <!-- <iframe width="640px" height="480px" title="Cyber Awareness Quiz for Parents" src="https://forms.office.com/Pages/ResponsePage.aspx?id=6qhEt_QrtkCar2m-KrMUOvj_asUGxw1JpZ6nugHRxRNUOFJWRVMySkNMODlBUTNaM0JQUTBRMTNXSC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe> -->
             <br><br>
@@ -79,13 +91,14 @@
             <br>
         </div>
 
-        <div class="container spad section-title underconstruction">
+        <div class="spad section-title underconstruction">
             <h2>Today's Blog</h2>
             <img src="testing/new/pictures/website-contruction-icon-english.webp" alt="Contruction in progress">
         </div>
+
+
         </main>
-        <!-- </main> -->
-        <!-- Latest Blog Section Begin 
+        <!-- Blog Header Start -->
         <section class="latest spad">
             <div class="container">
                 <div class="row">
@@ -97,88 +110,180 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="latest__slider owl-carousel">
-                        <div class="col-lg-4">
-                            <div class="blog__item latest__item">
-                                <h4>BLOG 1</h4>
-                                <ul>
-                                    <li>Jan 03, 2020</li>
-                                    <li>05 Comment</li>
-                                </ul>
-                                <p>We recently launched a new website for a Vital client and wanted to share some of the cool features we were able...</p>
-                                <a href="#">Read more <span class="arrow_right"></span></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="blog__item latest__item">
-                                <h4>BLOG 2</h4>
-                                <ul>
-                                    <li>Jan 03, 2020</li>
-                                    <li>05 Comment</li>
-                                </ul>
-                                <p>We recently launched a new website for a Vital client and wanted to share some of the cool features we were able...</p>
-                                <a href="#">Read more <span class="arrow_right"></span></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="blog__item latest__item">
-                                <h4>BLOG 2</h4>
-                                <ul>
-                                    <li>Jan 03, 2020</li>
-                                    <li> 05 Comment</li>
-                                </ul>
-                                <p>We recently launched a new website for a Vital client and wanted to share some of the cool features we were able...</p>
-                                <a href="#">Read more <span class="arrow_right"></span></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="blog__item latest__item">
-                                <h4>BLOG 3</h4>
-                                <ul>
-                                    <li>Jan 03, 2020</li>
-                                    <li> 05 Comment</li>
-                                </ul>
-                                <p>We recently launched a new website for a Vital client and wanted to share some of the cool features we were able...</p>
-                                <a href="#">Read more <span class="arrow_right"></span></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="blog__item latest__item">
-                                <h4>BLOG 4</h4>
-                                <ul>
-                                    <li>Jan 03, 2020</li>
-                                    <li>05 Comment</li>
-                                </ul>
-                                <p>We recently launched a new website for a Vital client and wanted to share some of the cool features we were able...</p>
-                                <a href="#">Read more <span class="arrow_right"></span></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="blog__item latest__item">
-                                <h4>BLOG 5</h4>
-                                <ul>
-                                    <li>Jan 03, 2020</li>
-                                    <li>05 Comment</li>
-                                </ul>
-                                <p>We recently launched a new website for a Vital client and wanted to share some of the cool features we were able...</p>
-                                <a href="#">Read more <span class="arrow_right"></span></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="blog__item latest__item">
-                                <h4>BLOG 6</h4>
-                                <ul>
-                                    <li>Jan 03, 2020</li>
-                                    <li>05 Comment</li>
-                                </ul>
-                                <p>We recently launched a new website for a Vital client and wanted to share some of the cool features we were able...</p>
-                                <a href="#">Read more <span class="arrow_right"></span></a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </section>-->
+        </section>
+        <!-- Blog Header End -->
+        <!-- Latest Blog Section Begin -->
+        <!-- Blog Entries Start -->
+        <section class="container hero__item4">
+        <div class="carousel" duration="7000">
+            <ul tabindex="0">
+                <li id="c1_slide1">
+                    <section class="blog__slider">
+                        <div class="blog__slider__item">
+                            <div class="blog__slider__content">
+                                <div class="post-time-section">
+                                    <div class="post-date">
+                                        <h1 class="day">27</h1>
+                                    </div>
+                                    <div class="post-month">
+                                        <span class="month">Sep</span>
+                                    </div>
+                                    <div class="post-year">
+                                        <span class="year">2023</span>
+                                    </div>
+                                </div>
+                                <div class="blog__slider__title">
+                                    <h4>BLOG 1</h4>
+                                </div>
+                                <div class="blog__slider__text">
+                                    Ensuring cyber safety is paramount during your job search&period; Here are this week&CloseCurlyQuote;s
+                                    tips&colon;<br>
+                                    &bullet; Keep your software updated and secure&semi; outdated versions can be vulnerable to cyber
+                                    threats&period;<br>
+                                    &bullet; Invest in reliable anti&dash;malware software to safeguard your device from potential
+                                    risks&period;<br>
+                                    &bullet; Establish a dedicated email account for job applications to shield your personal inbox from
+                                    unwanted solicitations&period;<br>
+                                    &bullet; Prioritize research on employers and websites before sharing personal information&semi; ensure
+                                    their legitimacy&period;<br>
+                                    &bullet; Steer clear of public Wi&dash;Fi when submitting applications or accessing sensitive
+                                    accounts&period;
+                                    If you must&comma; remember to log out and clear your browser history and cache&period;
+                                    <br>
+                                    <img class="blog__img" src="testing/new/pictures/1695758539530.webp" alt="DATA Protection image">
+                                    <br>
+                                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7112526826706530306/" target="_blank"
+                                        rel="noopener"><span class="arrow_right"></span> From
+                                        LinkedIn</a>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </li>
+                <li id="c1_slide2">
+                    <section class="blog__slider">
+                        <div class="blog__slider__item">
+                            <div class="blog__slider__content">
+                                <div class="post-time-section">
+                                    <div class="post-date">
+                                        <h1 class="day">28</h1>
+                                    </div>
+                                    <div class="post-month">
+                                        <span class="month">Sep</span>
+                                    </div>
+                                    <div class="post-year">
+                                        <span class="year">2023</span>
+                                    </div>
+                                </div>
+                                <div class="blog__slider__title">
+                                    <h4>BLOG 2</h4>
+                                </div>
+                                <div class="blog__slider__text">
+                                    <a href="https://www.fortinet.com/" target="_blank" rel="noopener">Fortinet</a>&comma; a global
+                                    cybersecurity leader&comma;
+                                    has taken a significant step towards empowering our Military Veteran Community with the formation of the
+                                    Veterans Program
+                                    Advisory Council&period; The initiative focuses on creating more cybersecurity opportunities for the
+                                    Military Veteran Community&period;<br>
+                                    &nbsp;<br>
+                                    We’re pleased to announce that <a href="whoweare.html#whoweare">Patrick Shaw</a>&comma; Founder of Cyber
+                                    Catalyst Talent Solutions&comma; has been
+                                    included as the board member representing Canada&comma; joining a distinguished global panel of members
+                                    from across the Five Eyes countries&colon; the
+                                    United States&comma; United Kingdom&comma; Canada&comma; New Zealand&comma; and Australia&period; This
+                                    group will provide guidance
+                                    to Fortinet in meeting the needs of military veterans looking to transition into the field of
+                                    cybersecurity&period;<br>
+                                    &nbsp;<br>
+                                    Patrick is excited to be included in Fortinet&CloseCurlyQuote;s commitment to securing the digital
+                                    landscape and supporting those who
+                                    have served our nations&period;
+                                    <br>
+                                    <a href="https://www.linkedin.com/posts/cyber-catalyst-talent-solutions_fortinet-veteransprogram-cybersecurityopportunities-activity-7113191829331742720-UUj7?utm_source=share&utm_medium=member_desktop"
+                                        target="_blank" rel="noopener"><span class="arrow_right"></span>From LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </li>
+                <li id="c1_slide3">
+                    <section class="blog__slider">
+                        <div class="blog__slider__item">
+                            <div class="blog__slider__content">
+                                <div class="post-time-section">
+                                    <div class="post-date">
+                                        <h1 class="day">3</h1>
+                                    </div>
+                                    <div class="post-month">
+                                        <span class="month">Oct</span>
+                                    </div>
+                                    <div class="post-year">
+                                        <span class="year">2023</span>
+                                    </div>
+                                </div>
+                                <div class="blog__slider__title">
+                                    <h4>BLOG 3</h4>
+                                </div>
+                                <div class="blog__slider__text">
+                                    As the world increasingly relies on technology to conduct everyday business&comma; cyber security and phishing attacks remain
+                                    at an all&dash;time high&period; Understanding the latest trends and best practices for staying ahead of cyber criminals is
+                                    essential&period; Have you seen an increase in activities related to cyber&dash;attacks&quest;
+                                    <br>
+                                    Take this free online quiz created by Cyber Catalyst to see how well you understand &num;Phishing &AMP; other cybersecurity
+                                    threats&period; October is Cyber Security Awareness Month&period; Check back next week to verify your level of Cyber Awareness&period;
+                                    <br>
+                                    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=6qhEt_QrtkCar2m-KrMUOvj_asUGxw1JpZ6nugHRxRNUMjhWTjRBMlc2NDM3QkxBVlBMVlROWFNUOC4u&embed=true">Quiz</a>
+                                    <br>
+                                    <a href="https://www.linkedin.com/posts/cyber-catalyst-talent-solutions_phishing-cybersecurity-phishingawareness-activity-7114942930410246144-rQl5?utm_source=share&utm_medium=member_desktop"
+                                        target="_blank" rel="noopener"><span class="arrow_right"></span>From LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </li>
+                <!-- <li id="c1_slide4">
+                    <section class="blog__slider">
+                        <div class="blog__slider__item">
+                            <div class="blog__slider__content">
+                                <div class="post-time-section">
+                                    <div class="post-date">
+                                        <h1 class="day">DD</h1>
+                                    </div>
+                                    <div class="post-month">
+                                        <span class="month">MMM</span>
+                                    </div>
+                                    <div class="post-year">
+                                        <span class="year">YYYY</span>
+                                    </div>
+                                </div>
+                                <div class="blog__slider__title">
+                                    <h4>BLOG #</h4>
+                                </div>
+                                <div class="blog__slider__text">
+                                    &nbsp;
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </li> -->
+            </ul>
+            <!-- the carousel action -->
+            <ol>
+                <li><a href="#c1_slide1"></a></li>
+                <li><a href="#c1_slide2"></a></li>
+                <li><a href="#c1_slide3"></a></li>
+                <!-- <li><a href="#c1_slide4"></a></li> -->
+            </ol>
+            <div class="prev"><h1>&lsaquo;</h1></div>
+            <div class="next"><h1>&rsaquo;</h1></div>
+            <br>
+            <br>
+        </div>
+        </section>
+        <!-- Blog Entries End -->
         <!-- Latest Blog Section End -->
 
         <!-- Work Section Begin -->
