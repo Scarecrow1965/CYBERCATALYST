@@ -27,7 +27,7 @@
 html, body {
   height: 100%;
   background: black;
-  /* transparent background line is below */
+  /* transparent background code is below */
   /* background: #00000055; */
   font-family: "Josefin Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -159,7 +159,7 @@ ul, ol {
   bottom: -40px;
   height: 5px;
   width: 350px;
-  background: #00bfe7;
+  background: #00bfe7; /* Aqua Blue */
   content: "";
 }
 .section-title h2 {
@@ -174,7 +174,7 @@ ul, ol {
   bottom: 0;
   height: 5px;
   width: 70px;
-  background: #00bfe7;
+  background: #00bfe7; /* Aqua Blue */
   content: "";
 }
 /* used to set background(bg) imgs to sections */
@@ -245,8 +245,8 @@ ul, ol {
   top: 0;
   height: 30px;
   width: 30px;
-  border-left: 2px solid #00bfe7;
-  border-top: 2px solid #00bfe7;
+  border-left: 2px solid #00bfe7; /* Aqua Blue */
+  border-top: 2px solid #00bfe7; /* Aqua Blue */
   content: "";
   z-index: -1;
   -webkit-transition: all, 0.7s;
@@ -259,8 +259,8 @@ ul, ol {
   bottom: 0;
   height: 30px;
   width: 30px;
-  border-right: 2px solid #00bfe7;
-  border-bottom: 2px solid #00bfe7;
+  border-right: 2px solid #00bfe7; /* Aqua Blue */
+  border-bottom: 2px solid #00bfe7; /* Aqua Blue */
   content: "";
   z-index: -1;
   -webkit-transition: all, 0.7s;
@@ -289,7 +289,7 @@ ul, ol {
 /*  */
 
 /* ----------------------------------------- */
-/* PREL0ADER SETUP - USED IN ALL PAGES*/
+/* PREL0ADER SETUP - USED IN ALL PAGES       */
 /* ----------------------------------------- */
 
 /* Preloder */
@@ -326,7 +326,7 @@ ul, ol {
   50% {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
-    border: 4px solid #673ab7;
+    border: 4px solid #673ab7; /* Purple */
     border-left-color: transparent;
   }
   100% {
@@ -337,7 +337,7 @@ ul, ol {
   }
 }
 
-/* W3C CSS VALIDATOR FLAGS THIS AS AN ERROR*/
+/* W3C CSS VALIDATOR FLAGS THIS AS AN ERROR */
 @-webkit-keyframes loader {
   0% {
     -webkit-transform: rotate(0deg);
@@ -346,7 +346,7 @@ ul, ol {
   }
   50% {
     -webkit-transform: rotate(180deg);
-    border: 4px solid #673ab7;
+    border: 4px solid #673ab7; /* Purple */
     border-left-color: transparent;
   }
   100% {
@@ -488,7 +488,7 @@ ul, ol {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: #00bfe7;
+  background: #00bfe7; /* Aqua Blue */
   content: "";
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
@@ -553,7 +553,7 @@ ul.submenu li.active > a {
     position: absolute;
     right: 0px;
     top: 14px;
-  content: '\ef7d';
+  content: '\ef7d'; /* the "<" icon */
 }
 
 /* affects only LinkedIn icon */
@@ -621,7 +621,7 @@ ul.submenu li.active > a {
   /* top and bottom | left and right */
 }
 .hero__slider.owl-carousel .owl-dots button {
-  color: #adadad;
+  color: #adadad; /* Grey */
   font-family: "Play", sans-serif;
   margin-right: 16px;
   position: relative;
@@ -666,10 +666,11 @@ ul.submenu li.active > a {
   height: 1100px;
   padding-top: 80px;
 } */
-/* .hero__item4 {
+.hero__item4 {
   height: 800px;
   padding-top: 80px;
-} */
+}
+
 /* used for candidates.html only */
 .hero__item-max {
   height: auto;
@@ -782,7 +783,7 @@ ul.submenu li.active > a {
 	background-color:white;
 	text-align: center;
   padding: 50px;
-	color: #360389; /* deep purple */
+	color: #360389; /* Deep Purple */
   border-radius: 6px;
   display: inline-block;
   text-align: center;
@@ -872,7 +873,7 @@ ul.submenu li.active > a {
   font-weight: 700;
 }
 .work__item__hover ul li {
-  color: #adadad;
+  color: #adadad; /* Grey */
   list-style: none;
   font-size: 16px;
   margin-right: 23px;
@@ -1125,7 +1126,7 @@ ul.submenu li.active > a {
 }
 /* for techvets.html */
 .callto__text2{
-  background: #070044;
+  background: #070044; /* Deep Blue */
   color: white;
 }
 .callto__text2 h3{
@@ -1211,19 +1212,6 @@ ul.submenu li.active > a {
       transform: rotate(45deg);
 }
 
-/* used in candidates html only */
-.services__item2 h1 {
-  color: white;
-  text-align: center;
-  font-weight: 700;
-  margin-top: 16px;
-  margin-bottom: 18px;
-}
-.services__item2 p {
-  text-align: center;
-}
-/*  */
-
 .services__item h4 {
   color: white;
   font-weight: 700;
@@ -1256,7 +1244,7 @@ ul.submenu li.active > a {
   top: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid #00bfe7;
+  border: 2px solid #00bfe7; /* Aqua Blue */
   content: "";
   -webkit-transition: all, 0.5s;
   -o-transition: all, 0.5s;
@@ -1271,8 +1259,6 @@ ul.submenu li.active > a {
   padding: 100px 20px;
   /* top and bottom | left and right */
 }
-
-
 
 /* -------------------------------------------------------------------------------------- */
 /*--------------------------------- Responsive Media Queries -----------------------------*/
@@ -1365,44 +1351,6 @@ ul.submenu li.active > a {
   }
   /*  */
 
-  /* candidate html */
-  .careers3 {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    position: relative;
-    display: inline-flex;
-    justify-items: center;
-  }
-  .cardimg3 {
-    flex-basis: max-content;
-    height: 125px;
-    width: 315px;
-    display: grid;
-  }
-  .cardimg3 img {
-    width: 300px;
-    height: 125px;
-    justify-content: center;
-  }
-  .career-title3 {
-    width: 400px;
-    height: 250px;
-    text-align: center;
-    border-radius: 5px;
-  }
-  .career-title3 p {
-    width: 400px;
-    padding: 10px;
-  }
-  .career-positions3 {
-    display: grid;
-    justify-content: center;
-    width: 300px;
-    text-align: center;
-  }
-  /*  */
-
   .hero__slider.owl-carousel .owl-dots {
     max-width: 930px !important;
   }
@@ -1449,14 +1397,14 @@ ul.submenu li.active > a {
     position: absolute;
     right: 10px;
     top: 26px;
-    background: #00bfe7;
+    background: #00bfe7; /* Aqua Blue */
   }
   ul.submenu ul {
     margin: 0;
   }
   ul.submenu {
     position: relative;
-    background: #00bfe7;
+    background: #00bfe7; /* Aqua Blue */
     left: 0;
     width: auto;
   }
@@ -1610,7 +1558,7 @@ ul.submenu li.active > a {
 @media only screen and (max-width: 767px) {
   /* nav bar */
   .slicknav_nav {
-    background: #652C91;
+    background: #652C91; /* Purple */
     border-radius: 5%;
   }
   .slicknav_menu {
@@ -1653,7 +1601,7 @@ ul.submenu li.active > a {
   }
   ul.submenu {
     position: relative;
-    background: #652C91;
+    background: #652C91; /* Purple */
     left: 0;
     width: auto;
   }
