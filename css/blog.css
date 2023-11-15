@@ -83,7 +83,7 @@ CAROUSEL CSS
 /* This sub-section applies the carousel look */
 .carousel ol {
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     display: flex;
     justify-content: center;
     left: 40%;
@@ -117,14 +117,14 @@ CAROUSEL CSS
     color: white;
     position: absolute;
     left: 0;
-    padding: 30px;
+    padding: 20px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 9;
 }
 
 .carousel .next {
-    left: 75%;
+    left: 76%;
     right: 0;
 }
 /*  */
@@ -139,7 +139,7 @@ CAROUSEL CSS
     position: relative;
     align-self: center;
     margin: auto;
-    padding: 25px;
+    padding: 5px;
     border-radius: 25px;
     height: 400px;
 }
@@ -152,14 +152,14 @@ CAROUSEL CSS
 .blog__slider__title h4 {
     color: black;
     font-weight: 700;
-    line-height: 31px;
+    line-height: 11px;
     margin-bottom: 18px;
 }
 
 .blog__slider__text {
     text-align: left;
     margin-left: 80px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     line-height: 1.5em;
 }
 

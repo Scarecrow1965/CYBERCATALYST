@@ -34,7 +34,8 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
+  margin: 20px 0 0 0;
+  /* top left bottom right */
   color: white;
   font-weight: 400;
   font-family: "Play", sans-serif;
@@ -67,7 +68,8 @@ h6 {
 p {
   font-size: 1.0rem;
   line-height: 26px;
-  margin: 0 0 15px 0;
+  margin: 10px 0 15px 0;
+  /* top left bottom right */
 }
 
 img {
@@ -1134,7 +1136,7 @@ ul.submenu li.active > a {
   padding: 0;
 }
 .callto__text2 h4 {
-  padding: 24px;
+  margin-left: 8%;
 }
 /*  */
 /* techvets top 10 reasons */
